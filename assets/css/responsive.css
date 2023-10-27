@@ -105,7 +105,7 @@
     }
 
     .header-cart__wrap {
-        padding: 4px 20px;
+        padding: 5.1px 20px;
     }
 
     .header-cart__wrap:hover .header__cart-list {
@@ -173,11 +173,9 @@
       
     }
     .navigation-nav__item-icon-down{
-        display: none;
-    }
-    .navigation-nav__item-icon-right{
         display: block;
     }
+    
     .navigation-menu__top-icon{
         display: flex;
         justify-content: end;
