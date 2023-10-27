@@ -2,6 +2,7 @@
 $('.navigation-nav__link-HTNH').onclick = function(){
     $('#slider').style.display = 'none';
     $('#contact').style.display = 'block'
+    $('#section').style.display = 'none';
     $('.navigation-nav__link.active').classList.remove('active') 
     this.classList.add('active')
 }
