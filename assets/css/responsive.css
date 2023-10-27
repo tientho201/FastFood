@@ -3,8 +3,14 @@
     #navigation {
         display: block !important;
     }
-}
 
+    
+}
+@media (min-width: 768px) {
+    .product-img>img{
+        min-height: 187px;
+    }
+}
 /* Tablet */
 @media (min-width: 740px) and (max-width: 1023px) {
     @media (max-width: 768px) {

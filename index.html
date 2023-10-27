@@ -7,7 +7,9 @@
         <title>FastFood</title>
         <!-- Thêm icon trên thanh trình duyệt -->
         <link rel="icon" href="./assets/img/logo/Ionic-Ionicons-Fast-food-sharp.512.png" type="image/x-icon" />
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+            integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+            crossorigin="anonymous" referrerpolicy="no-referrer" />
         <link rel="stylesheet" href="./assets/css/gird.css">
         <link rel="stylesheet" href="./assets/css/styles.css">
         <link rel="stylesheet" href="./assets/css/base.css">
@@ -252,16 +254,18 @@
                                 <a href="/" class="navigation-nav__link navigation-nav__link-home active">Home</a>
                             </li>
                             <li class="navigation-nav__item navigation-nav__item-folder">
-                                <div class="navigation-nav__link navigation-nav__link--no-select"> Danh Mục Sản Phẩm 
-                                    <i
+                                <div class="navigation-nav__link navigation-nav__link--no-select"> Danh Mục Sản Phẩm <i
                                         class="navigation-nav__item-icon-down ti-angle-down"></i>
-                                   
                                 </div>
                                 <div class="navigation-nav__category">
                                     <ul class="navigation-nav__category-list">
                                         <li class="navigation-nav__category-item">
                                             <a href="./ThuMuc/indexNoLogin.html" class="navigation-nav__category-link">
                                                 <i class="navigation-nav__category-icon ti-angle-right"></i>Ưu Đãi</a>
+                                        </li>
+                                        <li class="navigation-nav__category-item">
+                                            <a href="./ThuMuc/indexNoLogin.html" class="navigation-nav__category-link">
+                                                <i class="navigation-nav__category-icon ti-angle-right"></i>Món Mới</a>
                                         </li>
                                         <li class="navigation-nav__category-item">
                                             <a href="" class="navigation-nav__category-link"><i
@@ -327,13 +331,99 @@
             <!-- SECTION -->
             <div id="section">
                 <div class="container">
-                    <div class="notification-letters">
-                        <h1>DANH MỤC SẢN PHẨM</h1>
-                        <span>-</span>
-                    </div>
+                    <h3 class="notification-letters">
+                        <span>DANH MỤC SẢN PHẨM</span>
+                    </h3>
                     <!-- Sản phẩm của danh mục -->
-                    <div class="product-portfolio">
-                        
+                    <div class="product-portfolio row row-cols-xl-4 row-cols-sm-2 row-cols-md-3 row-cols-lg-4 row-cols-1">
+                        <div class="product-item ">
+                            <a class="product-link" href="#">
+                                <div class="product-img">
+                                    <img src="./assets/img/Item/Uu Dai.jpg" alt="">
+                                </div>
+                                <div class="product-info">
+                                    <h2>Ưu Đãi</h2>
+                                    <i class="product-icon fa-solid fa-angle-right"></i>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="product-item ">
+                            <a class="product-link" href="#">
+                                <div class="product-img">
+                                    <img src="./assets/img/Item/MON MOI.jpg" alt="">
+                                </div>
+                                <div class="product-info">
+                                    <h2>Món Mới</h2>
+                                    <i class="product-icon fa-solid fa-angle-right"></i>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="product-item ">
+                            <a class="product-link" href="#">
+                                <div class="product-img">
+                                    <img src="./assets/img/Item/ComBo1Nguoi.png" alt="">
+                                </div>
+                                <div class="product-info">
+                                    <h2>ComBo 1 Người</h2>
+                                    <i class="product-icon fa-solid fa-angle-right"></i>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="product-item ">
+                            <a class="product-link" href="#">
+                                <div class="product-img">
+                                    <img src="./assets/img/Item/ComboNhom.jpg" alt="">
+                                </div>
+                                <div class="product-info">
+                                    <h2>Combo Nhóm</h2>
+                                    <i class="product-icon fa-solid fa-angle-right"></i>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="product-item ">
+                            <a class="product-link" href="#">
+                                <div class="product-img">
+                                    <img src="./assets/img/Item/GaRanGaQuay.jpg" alt="">
+                                </div>
+                                <div class="product-info">
+                                    <h2>Gà Rán - Gà Quay</h2>
+                                    <i class="product-icon fa-solid fa-angle-right"></i>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="product-item ">
+                            <a class="product-link" href="#">
+                                <div class="product-img">
+                                    <img src="./assets/img/Item/HonHop.jpg" alt="">
+                                </div>
+                                <div class="product-info">
+                                    <h2>Burger - Cơm - Mì Ý</h2>
+                                    <i class="product-icon fa-solid fa-angle-right"></i>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="product-item ">
+                            <a class="product-link" href="#">
+                                <div class="product-img">
+                                    <img src="./assets/img/Item/ThucAnNhe.jpg" alt="">
+                                </div>
+                                <div class="product-info">
+                                    <h2>Thức Ăn Nhẹ</h2>
+                                    <i class="product-icon fa-solid fa-angle-right"></i>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="product-item ">
+                            <a class="product-link" href="#">
+                                <div class="product-img">
+                                    <img src="./assets/img/Item/TRANG MIENG.jpg" alt="">
+                                </div>
+                                <div class="product-info">
+                                    <h2>Thức Uống & Tráng Miệng</h2>
+                                    <i class="product-icon fa-solid fa-angle-right"></i>
+                                </div>
+                            </a>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -355,6 +445,9 @@
                             <ul class="footer-list">
                                 <li class="footer-item">
                                     <a href="" class="footer-link">Ưu Đãi</a>
+                                </li>
+                                <li class="footer-item">
+                                    <a href="" class="footer-link">Món Mới</a>
                                 </li>
                                 <li class="footer-item">
                                     <a href="" class="footer-link"> Combo 1 Người</a>
