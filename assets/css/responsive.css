@@ -3,12 +3,18 @@
     #navigation {
         display: block !important;
     }
-
-    
 }
+
+
 @media (min-width: 768px) {
     .product-img>img{
         min-height: 187px;
+    }
+}
+
+@media (min-width: 560px) {
+    .product-img>img{
+        min-height: 250px;
     }
 }
 /* Tablet */
