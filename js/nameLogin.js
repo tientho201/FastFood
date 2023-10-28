@@ -12,7 +12,7 @@ logOut.onclick = function(event) {
     event.preventDefault(); // Prevents the default link action
 
     setTimeout(function() {
-        window.location.href = 'index.html'; // Redirect to the logout page
+        window.location.href = '../index.html'; // Redirect to the logout page
     }, 1000);
 }
 

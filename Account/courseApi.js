@@ -45,7 +45,7 @@ Validator({
                            localStorage.setItem('loggedInUser', JSON.stringify(responseData));
                             // Chuyển hướng đến trang người dùng
                             setTimeout(() => {
-                                window.location = '../indexLogin.html';
+                                window.location = '../TrangChu/indexLogin.html';
                             }, 1000);
                         })
                         
@@ -72,8 +72,8 @@ Validator({
     ],
 
     onSubmit: function (data) {
-        var userEmail = data.email
-        var passWord = data.password
+        var userEmail = data.email;
+        var passWord = data.password;
         fetch(courseApiSignIn)
             .then(response => response.json())
             .then(apiData => {
@@ -88,7 +88,7 @@ Validator({
                             localStorage.setItem('loggedInUser', JSON.stringify(foundUser));
                             // Chuyển hướng đến trang admin
                             setTimeout(() => {
-                                window.location = '../indexAdmin.html';
+                                window.location = '../TrangChu/indexAdmin.html';
                             }, 1000);
                         } else {
                             // Đăng nhập với quyền người dùng thông thường
@@ -97,28 +97,27 @@ Validator({
                             localStorage.setItem('loggedInUser', JSON.stringify(foundUser));
                             // Chuyển hướng đến trang người dùng
                             setTimeout(() => {
-                                window.location = '../indexLogin.html';
+                                window.location = '../TrangChu/indexLogin.html';
                             }, 1000);
                         } 
                     } else {
                         // Xử lý trường hợp mật khẩu không đúng
-                        
-                        document.querySelector('.form-message_password').innerHTML = "Mật khẩu không đúng"
-                        document.querySelector('#form-2 #password').value = ''
+                        document.querySelector('.form-message_password').innerHTML = "Mật khẩu không đúng";
+                        document.querySelector('#form-2 #password').value = '';
                     }
                 } else {
                     // Xử lý trường hợp không tìm thấy email
                     alert("Không tìm thấy email");
-                    document.querySelector('#form-2 #email').value = ''
-                    document.querySelector('#form-2 #email').parentElement.classList.add('invalid')
-                    document.querySelector('#form-2 #password').value = ''
-                    document.querySelector('#form-2 #password').parentElement.classList.add('invalid')
+                    document.querySelector('#form-2 #email').value = '';
+                    document.querySelector('#form-2 #email').parentElement.classList.add('invalid');
+                    document.querySelector('#form-2 #password').value = '';
+                    document.querySelector('#form-2 #password').parentElement.classList.add('invalid');
                 }
             })
             .catch(error => {
                 // Xử lý lỗi ở đây
                 console.error('Lỗi:', error);
             });
-
     }
+    
 })
