@@ -711,7 +711,6 @@ header {
 #navigation {
     background-color: var(--top_header-color);
     position: relative;
-    ;
     width: 100%;
     z-index: 2;
     display: block;
@@ -753,7 +752,7 @@ header {
 
 .navigation-nav__link--no-select {
     cursor: default;
-    user-select: blocnone;
+    user-select: none;
 }
 
 

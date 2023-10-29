@@ -70,6 +70,9 @@ html{
 }
 
 .active{
-    color: var(--red-bright);
-    border-bottom: 2px solid red;
+    color: var(--red-bright) !important;
+    border-bottom: 5px solid red;
+}
+.active-item{
+    background-color: var(--red-bright);
 }
