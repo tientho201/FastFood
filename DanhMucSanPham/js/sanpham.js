@@ -1,48 +1,101 @@
-const breadcrumbLinks = document.querySelectorAll('.breadcrumb-link');
-let shouldListenScroll = true;
+// Xử lý cuộn mượt với khoảng cách top cố định
+function smoothScroll(target, duration, topOffset) {
+    var targetPosition = target.getBoundingClientRect().top;
+    var startPosition = window.pageYOffset;
+    var startTime = null;
 
-function toggleScrollEvent() {
-    if (shouldListenScroll) {
-        window.addEventListener('scroll', setActiveMenuItem);
-    } else {
-        window.removeEventListener('scroll', setActiveMenuItem);
+    function animation(currentTime) {
+        if (startTime === null) startTime = currentTime;
+        var timeElapsed = currentTime - startTime;
+        var run = ease(timeElapsed, startPosition, targetPosition, duration);
+        window.scrollTo(0, run - topOffset);
+        if (timeElapsed < duration) requestAnimationFrame(animation);
     }
+
+    // Thuật toán để tạo hiệu ứng cuộn mượt
+    function ease(t, b, c, d) {
+        t /= d / 2;
+        if (t < 1) return (c / 2) * t * t + b;
+        t--;
+        return (-c / 2) * (t * (t - 2) - 1) + b;
+    }
+
+    requestAnimationFrame(animation);
 }
 
-function setActiveMenuItem() {
+// Xử lý sự kiện khi nhấp vào breadcrumb
+const breadcrumblinks = document.querySelectorAll('.breadcrumb-link');
+breadcrumblinks.forEach((breadcrumbLink, index) => {
+    breadcrumbLink.addEventListener('click', function (e) {
+        e.preventDefault(); // Ngăn chặn hành vi mặc định của liên kết
+        const targetId = this.getAttribute('href');
+        const targetElement = document.querySelector(targetId);
+
+        if (targetElement) {
+            const duration = 1000; // Thời gian cuộn mượt
+            const topOffset = 130; // Khoảng cách top thêm vào
+
+            // Xóa thuộc tính 'active' từ tất cả các breadcrumb
+            breadcrumblinks.forEach((link) => {
+                link.classList.remove('active');
+            });
+
+            // Thêm thuộc tính 'active' vào breadcrumb được chọn
+            this.classList.add('active');
+
+            smoothScroll(targetElement, duration, topOffset);
+        }
+    });
+});
+
+// Xác định khi nào cuộn mượt để thêm lớp 'active' vào breadcrumb
+const targetElements = [
+    document.getElementById('UuDai'),
+    document.getElementById('MonMoi'),
+    document.getElementById('Combo1Nguoi'),
+    document.getElementById('ComboNhom'),
+    document.getElementById('GaRanGaQuay'),
+    document.getElementById('BurgerComMiY'),
+    document.getElementById('ThucAnNhe'),
+    document.getElementById('ThucUong_TrangMieng'),
+];
+
+let isScrollingDown = false;
+let lastScrollTop = 0;
+
+function setActiveBreadcrumb() {
     const currentPos = window.scrollY;
+    const offset = 200; // Khoảng cách top
 
-    breadcrumbLinks.forEach(breadcrumbLink => {
-        const sectionId = breadcrumbLink.getAttribute('href');
-        const section = document.querySelector(sectionId);
+    if (currentPos > lastScrollTop) {
+        isScrollingDown = true;
+    } else {
+        isScrollingDown = false;
+    }
+    lastScrollTop = currentPos;
 
-        if (section && section.offsetTop <= currentPos && section.offsetTop + section.offsetHeight > currentPos) {
-            breadcrumbLink.classList.add('active');
+    targetElements.forEach((section, index) => {
+        const breadcrumblink = breadcrumblinks[index];
+        if (isScrollingDown) {
+            if (
+                section.offsetTop - offset <= currentPos &&
+                section.offsetTop + section.offsetHeight > currentPos + offset
+            ) {
+                breadcrumblink.classList.add('active');
+            } else {
+                breadcrumblink.classList.remove('active');
+            }
         } else {
-            breadcrumbLink.classList.remove('active');
+            if (
+                section.offsetTop - offset <= currentPos + offset &&
+                section.offsetTop + section.offsetHeight > currentPos + offset
+            ) {
+                breadcrumblink.classList.add('active');
+            } else {
+                breadcrumblink.classList.remove('active');
+            }
         }
     });
 }
 
-toggleScrollEvent(); // Kích hoạt sự kiện lắng nghe cuộn mặc định
-
-breadcrumbLinks.forEach(breadcrumbLink => {
-    breadcrumbLink.onclick = function(e) {
-        e.preventDefault(); // Ngăn chặn hành vi mặc định của liên kết
-        breadcrumbLinks.forEach(link => {
-            link.classList.remove('active');
-        });
-        this.classList.add('active');
-        shouldListenScroll = false;
-        toggleScrollEvent();
-        const section = document.querySelector(this.getAttribute('href'));
-        if (section) {
-            window.removeEventListener('scroll', setActiveMenuItem); // Tạm thời tắt sự kiện cuộn
-            section.scrollIntoView({ behavior: 'smooth' }); // Cuộn đến phần tử liên quan
-            setTimeout(() => {
-                shouldListenScroll = true;
-                toggleScrollEvent();
-            }, 1000); // Sau khi cuộn xong, kích hoạt lại sự kiện cuộn
-        }
-    };
-});
+window.addEventListener('scroll', setActiveBreadcrumb);
