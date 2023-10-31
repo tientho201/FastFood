@@ -830,7 +830,7 @@ header {
 
 
 .mySlides {
-    display: none;
+    display: block;
     position: relative;
 }
 
@@ -875,9 +875,14 @@ header {
 .activeSlier:hover {
     background-color: #717171;
 }
-
+.slick-next{
+    right: 0;
+}
+.slick-arrow{
+    display: none !important;
+}
 /* Fading animation */
-.fade {
+/* .fade {
     animation-name: fade;
     animation-duration: 1.5s;
 }
@@ -890,7 +895,7 @@ header {
     to {
         opacity: 1
     }
-}
+} */
     /* On smaller screens, decrease text size */
     @media only screen and (max-width: 300px) {
 

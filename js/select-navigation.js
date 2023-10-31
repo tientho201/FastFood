@@ -1,8 +1,7 @@
 // click thêm active
-const $ = document.querySelector.bind(document);
-const $$ = document.querySelectorAll.bind(document);
 
-const navi_links = $$('.navigation-nav__link');
+
+const navi_links = document.querySelectorAll('.navigation-nav__link');
 
 navi_links.forEach(function (navi_link, index) {
   navi_link.onclick = function () {
