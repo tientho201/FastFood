@@ -46,7 +46,7 @@ Validator({
                             // Chuyển hướng đến trang người dùng
                             setTimeout(() => {
                                 window.location = '../TrangChu/indexLogin.html';
-                            }, 1000);
+                            }, 500);
                         })
                         
                 }
@@ -89,7 +89,7 @@ Validator({
                             // Chuyển hướng đến trang admin
                             setTimeout(() => {
                                 window.location = '../TrangChu/indexAdmin.html';
-                            }, 1000);
+                            }, 500);
                         } else {
                             // Đăng nhập với quyền người dùng thông thường
                             alert("Đăng nhập thành công với tài khoản người dùng");
@@ -98,7 +98,7 @@ Validator({
                             // Chuyển hướng đến trang người dùng
                             setTimeout(() => {
                                 window.location = '../TrangChu/indexLogin.html';
-                            }, 1000);
+                            }, 500);
                         } 
                     } else {
                         // Xử lý trường hợp mật khẩu không đúng

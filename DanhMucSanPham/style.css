@@ -30,12 +30,14 @@
 .breadcrumb-category {
     display: block;
     padding-bottom: 8px;
+    position: relative;
+
 }
 
 .breadcrumb-list {
     display: flex;
     max-width: 100%;
-    overflow-x: visible;
+    overflow-x: hidden ;
 }
 
 .breadcrumb-item {
@@ -48,7 +50,7 @@
 .breadcrumb-link {
     text-decoration: none;
     color: #20090950;
-    font-size: 2.1rem;
+    font-size: 2.4rem;
     line-height: 2rem;
     text-align: center;
     width: 110px;
@@ -57,11 +59,24 @@
     width: 100%;
     padding: 10px 6px;
 }
-
+.slick-dots{
+    display: none !important;
+}
+.next{
+    right: -50px;
+   color: black;
+}
+.prev{
+    left: -50px;
+    color: black;
+}
+.next:hover,
+.prev:hover{
+    color: #fff;
+   
+}
 /* BREADCRUMB */
 /* UU DAi */
-
-
 .product-title {
     margin-bottom: 16px;
     margin-top: 48px;

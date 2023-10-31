@@ -1,24 +1,23 @@
 // click thêm active
-const $ = document.querySelector.bind(document);
-const $$ = document.querySelectorAll.bind(document);
 
-const navi_links = $$('.navigation-nav__link');
+
+const navi_links = document.querySelectorAll('.navigation-nav__link');
 
 navi_links.forEach(function (navi_link, index) {
   navi_link.onclick = function () {
-    $('.navigation-nav__link.active').classList.remove('active');
+    document.querySelector('.navigation-nav__link.active').classList.remove('active');
     this.classList.add('active')
   }
 })
 
 // 
-var navigation_close_on = $('.navigation-menu__close');
+var navigation_close_on = document.querySelector('.navigation-menu__close');
 navigation_close_on.onclick = function () {
-  $('#navigation').style.display = 'none'
+  document.querySelector('#navigation').style.display = 'none'
 }
-var on_tabmenu = $('.tab-menu__checkbox')
+var on_tabmenu = document.querySelector('.tab-menu__checkbox')
 on_tabmenu.onclick = function () {
-  $('#navigation').style.display = 'block'
+  document.querySelector('#navigation').style.display = 'block'
 }
 
 
@@ -28,6 +27,10 @@ window.onscroll = function () {
 };
 
 // 
+let prev = document.querySelector('.prev')
+let next = document.querySelector('.next')
+let btn__prev = document.querySelector('.breadcrumb-btn__prev')
+let btn__next = document.querySelector('.breadcrumb-btn__next')
 let toolbar = document.getElementById("navigation");
 let toolbreadcrumb = document.getElementById('breadcrumb');
 let toolbclink = document.querySelectorAll('.breadcrumb-link');
@@ -47,9 +50,24 @@ function myFunction() {
       toolbreadcrumb.style.top = '58px';
       toolbreadcrumb.style.zIndex = '4';
       toolbreadcrumb.style.backgroundColor = "var(--top_header-color)";
-
       toolbclink.forEach(function (value, index) {
-        value.style.color = "#fff";
+      value.style.color = "#fff";
+        btn__prev.onmouseover = function(e){
+          btn__prev.style.backgroundColor = "#fff";
+          prev.style.color = "#000";
+        }   
+        btn__next.onmouseover = function(e){
+          btn__next.style.backgroundColor = "#fff";
+          next.style.color = "#000";
+        }
+        btn__prev.onmouseout = function(e){
+          btn__prev.style.backgroundColor = "#3F2E3E";
+          prev.style.color = "#fff";
+        }   
+        btn__next.onmouseout = function(e){
+          btn__next.style.backgroundColor = "#3F2E3E";
+          next.style.color = "#fff";
+        }
       });
     } else {
       toolbar.style.position = "relative";
@@ -66,6 +84,24 @@ function myFunction() {
         value.style.color = "#20090950";
         value.style.zIndex = '2';
       });
+      btn__prev.onmouseover = function(e){
+        btn__prev.style.backgroundColor = "rgba(0, 0, 0, 0.8)";
+        prev.style.color = "#fff";
+      }   
+      btn__next.onmouseover = function(e){
+        btn__next.style.backgroundColor = "rgba(0, 0, 0, 0.8)";
+        next.style.color = "#fff";
+
+      }
+      btn__prev.onmouseout = function(e){
+        btn__prev.style.backgroundColor = "#fff";
+        prev.style.color = "#000";
+
+      }   
+      btn__next.onmouseout = function(e){
+        btn__next.style.backgroundColor = "#fff";
+        next.style.color = "#000";
+      }
     }
   }
 }

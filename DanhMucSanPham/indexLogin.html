@@ -5,18 +5,22 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>FastFood</title>
-        <!-- Thêm icon trên thanh trình duyệt -->
-        <link rel="icon" href="../assets/img/logo/Ionic-Ionicons-Fast-food-sharp.512.png" type="image/x-icon" />
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
-            integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
-            crossorigin="anonymous" referrerpolicy="no-referrer" />
-            <link rel="stylesheet" href="./gird.css">
-            <link rel="stylesheet" href="../assets/css/styles.css">
-            <link rel="stylesheet" href="./style.css">
-            <link rel="stylesheet" href="../assets/css/base.css">
-            <link rel="stylesheet" href="../assets/css/responsive.css">
-            <link rel="stylesheet" href="./responsive.css">
-        <link rel="stylesheet" href="../assets/font/themify-icons-font/themify-icons/themify-icons.css">
+         <!-- Thêm icon trên thanh trình duyệt -->
+         <link rel="icon" href="../assets/img/logo/Ionic-Ionicons-Fast-food-sharp.512.png" type="image/x-icon" />
+         <!-- Nhúng link icon -->
+         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+             integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+             crossorigin="anonymous" referrerpolicy="no-referrer" />
+         <!-- link thư viện  -->
+         <!-- CSS tự code -->
+         <link rel="stylesheet" href="./gird.css">
+         <link rel="stylesheet" href="../assets/css/styles.css">
+         <link rel="stylesheet" href="./style.css">
+         <link rel="stylesheet" href="../assets/css/base.css">
+         <link rel="stylesheet" href="../assets/css/responsive.css">
+         <link rel="stylesheet" href="./responsive.css">
+         <!-- font icon -->
+         <link rel="stylesheet" href="../assets/font/themify-icons-font/themify-icons/themify-icons.css">
     </head>
 
     <body>
@@ -277,18 +281,37 @@
            <!-- BREADCRUMB -->
            <div id="breadcrumb">
             <div class="container">
-                <div class="breadcrumb-category">
+                <div class="breadcrumb-category" >
                     <ul class="breadcrumb-list">
-                        <li class="breadcrumb-item"><a class="breadcrumb-link active" href="#UuDai">Ưu Đãi</a></li>
-                        <li class="breadcrumb-item"><a class="breadcrumb-link" href="#MonMoi">Món Mới</a></li>
-                        <li class="breadcrumb-item"><a class="breadcrumb-link" href="#Combo1Nguoi">Combo 1 Người</a></li>
-                        <li class="breadcrumb-item"><a class="breadcrumb-link" href="#ComboNhom">Combo Nhóm</a></li>
-                        <li class="breadcrumb-item"><a class="breadcrumb-link" href="#GaRanGaQuay">Gà Rán - Gà Quay</a></li>
-                        <li class="breadcrumb-item"><a class="breadcrumb-link" href="#BurgerComMiY">Burger - Cơm - Mì Ý</a></li>
-                        <li class="breadcrumb-item"><a class="breadcrumb-link" href="#ThucAnNhe">Thức Ăn Nhẹ</a></li>
-                        <li class="breadcrumb-item"><a class="breadcrumb-link" href="#ThucUong_TrangMieng">Thức Uống & Tráng Miệng</a>
+                        <li class="breadcrumb-item">
+                            <a class="breadcrumb-link active" href="#UuDai">Ưu Đãi</a>
+                        </li>
+                        <li class="breadcrumb-item">
+                            <a class="breadcrumb-link" href="#MonMoi">Món Mới</a>
+                        </li>
+                        <li class="breadcrumb-item">
+                            <a class="breadcrumb-link" href="#Combo1Nguoi">Combo 1 Người</a>
+                        </li>
+                        <li class="breadcrumb-item">
+                            <a class="breadcrumb-link" href="#ComboNhom">Combo Nhóm</a>
+                        </li>
+                        <li class="breadcrumb-item">
+                            <a class="breadcrumb-link" href="#GaRanGaQuay">Gà Rán - Gà Quay</a>
+                        </li>
+                        <li class="breadcrumb-item">
+                            <a class="breadcrumb-link" href="#BurgerComMiY">Burger - Cơm - Mì Ý</a>
+                        </li>
+                        <li class="breadcrumb-item">
+                            <a class="breadcrumb-link" href="#ThucAnNhe">Thức Ăn Nhẹ</a>
+                        </li>
+                        <li class="breadcrumb-item">
+                            <a class="breadcrumb-link" href="#ThucUong_TrangMieng">Thức Uống & Tráng Miệng</a>
                         </li>
                     </ul>
+                    <div class="breadcrumb-btn">
+                        <a class="breadcrumb-btn__prev prev ti-angle-left" style="display: none;"></a>
+                        <a class="breadcrumb-btn__next next ti-angle-right"></a>
+                    </div>
                 </div>
             </div>
         </div>
@@ -1756,9 +1779,16 @@
             </footer>
             <!-- FOOTER -->
         </div>
+          <!-- jQuery Plugins -->
+        <!-- Thêm thư viện jQuery trước -->
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/smoothscroll/1.4.10/SmoothScroll.min.js"></script>
+        <!-- Thêm tệp JavaScript của Slick -->
+        <!-- Js tự code -->
         <script src="./js/select-navigation.js"></script>
         <script src="./js/nameLogin.js"></script>
         <script src="./js/sanpham.js"></script>
+        <script src="./js/slider.js"></script>
     </body>
 
 </html>
