@@ -2,7 +2,7 @@ $(document).ready(function(){
   var container = $(".breadcrumb-list");
   var prevBtn = $(".breadcrumb-btn__prev");
   var nextBtn = $(".breadcrumb-btn__next");
-
+var activeItem = $('.breadcrumb-link.active')
   if (container[0].scrollWidth <= container.innerWidth()) {
       prevBtn.hide();
       nextBtn.hide();
@@ -42,5 +42,5 @@ $(document).ready(function(){
     if (activeItemPosition < 0 || activeItemPosition + activeItemWidth > containerWidth) {
         container.scrollLeft(containerScrollLeft + activeItemPosition - containerWidth / 2 + activeItemWidth / 2);
     }
-}
+}  console.log(activeItem.length)
 });

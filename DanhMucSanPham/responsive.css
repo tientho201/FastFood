@@ -62,6 +62,9 @@
         top: 0 !important;
         background-color: #fff !important;
     }
+    .breadcrumb-list{
+        overflow: auto;
+    }
     .prev , .next {
         display: none !important;
     }

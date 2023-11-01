@@ -5,19 +5,22 @@ const navi_links = document.querySelectorAll('.navigation-nav__link');
 
 navi_links.forEach(function (navi_link, index) {
   navi_link.onclick = function () {
-    $('.navigation-nav__link.active').classList.remove('active');
+    document.querySelector('.navigation-nav__link.active').classList.remove('active');
     this.classList.add('active')
   }
 })
 
 // 
-var navigation_close_on = $('.navigation-menu__close');
+var navigation_close_on = document.querySelector('.navigation-menu__close');
 navigation_close_on.onclick = function(){
-  $('#navigation').style.display = 'none'
+  document.querySelector('#navigation').style.display = 'none'
+
+
 }
-var on_tabmenu = $('.tab-menu__checkbox')
+var on_tabmenu = document.querySelector('.tab-menu__checkbox')
 on_tabmenu.onclick = function(){
-  $('#navigation').style.display = 'block'
+  document.querySelector('#navigation').style.display = 'block'
+
 }
 
 
