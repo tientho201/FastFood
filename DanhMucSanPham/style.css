@@ -129,7 +129,16 @@
 .product-buy:hover{
     background-color: #86818194;
 }
-
+    /* Sản phẩm  */
+    #MonMoi,
+    #Combo1Nguoi,
+    #ComboNhom,
+    #GaRanGaQuay,
+    #BurgerComMiY,
+    #ThucAnNhe,
+    #ThucUong_TrangMieng{
+        display: block ;
+    }
 #footer{
     margin-top: 32px;
 }

@@ -757,9 +757,9 @@ header {
 
 
 .navigation-nav__item-icon-down {
-    font-size: .9rem;
+    font-size: 1.4rem;
     position: relative;
-    top: 8px;
+    top: 10px;
     margin-left: 4px;
 }
 

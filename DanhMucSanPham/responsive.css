@@ -6,6 +6,7 @@
 
 
 }
+
 @media (min-width: 740px) and (max-width: 1200px) {
 
 
@@ -15,16 +16,26 @@
     }
 
 }
+
 @media (min-width: 740px) and (max-width: 770px) {
     .product-item {
         margin: 0 12px 24px !important;
     }
+    
 }
+
 @media (max-width: 1000px) {
     .product-item {
         margin: 0 12px 24px;
     }
+    .next{
+        right: -38px;
+    
+    }
+    .prev{
+        left: -38px;
 
+    }
     .product-img>img {
         min-height: 187px;
     }
@@ -35,8 +46,9 @@
     @media (min-width: 576px) {
         .product-item {
             margin: 0 12px 24px !important;
-        }  
+        }
     }
+
     /* BREADCRUMB */
 
     .breadcrumb-link {
@@ -62,12 +74,16 @@
         top: 0 !important;
         background-color: #fff !important;
     }
-    .breadcrumb-list{
+
+    .breadcrumb-list {
         overflow: auto;
     }
-    .prev , .next {
+
+    .prev,
+    .next {
         display: none !important;
     }
+
     /* BREADCRUMB */
     @media (max-width: 576px) {
         .row-cols-1 {
@@ -77,5 +93,16 @@
 
     .product-item {
         margin: 0 10px 24px;
+    }
+
+    /* Sản phẩm  */
+    #MonMoi,
+    #Combo1Nguoi,
+    #ComboNhom,
+    #GaRanGaQuay,
+    #BurgerComMiY,
+    #ThucAnNhe,
+    #ThucUong_TrangMieng{
+        display: none ;
     }
 }
