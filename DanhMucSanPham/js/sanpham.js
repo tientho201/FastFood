@@ -97,5 +97,27 @@ function setActiveBreadcrumb() {
         }
     });
 }
+function adjustScrollPosition() {
+    const activeBreadcrumb = document.querySelector('.breadcrumb-link.active');
+    if (activeBreadcrumb) {
+        const breadcrumbContainer = document.querySelector('.breadcrumb-list');
+        const containerWidth = breadcrumbContainer.offsetWidth;
+        const breadcrumbWidth = activeBreadcrumb.offsetWidth;
+        const breadcrumbPosition = activeBreadcrumb.offsetLeft;
+        const breadcrumbEnd = breadcrumbPosition + breadcrumbWidth;
 
-window.addEventListener('scroll', setActiveBreadcrumb);
+        const scrollAmount = 0; // Số lượng cuộn khi điều chỉnh
+
+        if (breadcrumbPosition < 0) {
+            breadcrumbContainer.scrollLeft += breadcrumbPosition - scrollAmount;
+        } else if (breadcrumbEnd > containerWidth) {
+            breadcrumbContainer.scrollLeft += breadcrumbEnd - containerWidth + scrollAmount;
+        } else {
+            breadcrumbContainer.scrollLeft = -scrollAmount;
+        }
+    }
+}
+window.addEventListener('scroll', () => {
+    setActiveBreadcrumb();
+    adjustScrollPosition();
+});

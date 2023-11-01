@@ -54,22 +54,7 @@ function myFunction() {
       value.style.color = "#fff";
       prev.style.color = "#fff";
       next.style.color = "#fff";
-        // btn__prev.onmouseover = function(e){
-        //   btn__prev.style.backgroundColor = "#fff";
-        //   prev.style.color = "#000";
-        // }   
-        // btn__next.onmouseover = function(e){
-        //   btn__next.style.backgroundColor = "#fff";
-        //   next.style.color = "#000";
-        // }
-        // btn__prev.onmouseout = function(e){
-        //   btn__prev.style.backgroundColor = "#3F2E3E";
-        //   prev.style.color = "#fff";
-        // }   
-        // btn__next.onmouseout = function(e){
-        //   btn__next.style.backgroundColor = "#3F2E3E";
-        //   next.style.color = "#fff";
-        // }
+        
       });
     } else {
       toolbar.style.position = "relative";
@@ -88,25 +73,9 @@ function myFunction() {
       });
       prev.style.color = "#000";
       next.style.color = "#000";
-      // btn__prev.onmouseover = function(e){
-      //   btn__prev.style.backgroundColor = "rgba(0, 0, 0, 0.8)";
-      //   prev.style.color = "#fff";
-      // }   
-      // btn__next.onmouseover = function(e){
-      //   btn__next.style.backgroundColor = "rgba(0, 0, 0, 0.8)";
-      //   next.style.color = "#fff";
 
-      // }
-      // btn__prev.onmouseout = function(e){
-      //   btn__prev.style.backgroundColor = "#fff";
-      //   prev.style.color = "#000";
+      }
 
-      // }   
-      // btn__next.onmouseout = function(e){
-      //   btn__next.style.backgroundColor = "#fff";
-      //   next.style.color = "#000";
-      // }
-    }
   }
 }
 

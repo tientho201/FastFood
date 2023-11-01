@@ -33,14 +33,4 @@ var activeItem = $('.breadcrumb-link.active')
           scrollLeft: container.scrollLeft() - 200
       }, 500);
   });
-  if (activeItem.length > 0) {
-    var activeItemPosition = activeItem.position().left;
-    var containerScrollLeft = container.scrollLeft();
-    var containerWidth = container.width();
-    var activeItemWidth = activeItem.outerWidth();
-
-    if (activeItemPosition < 0 || activeItemPosition + activeItemWidth > containerWidth) {
-        container.scrollLeft(containerScrollLeft + activeItemPosition - containerWidth / 2 + activeItemWidth / 2);
-    }
-}  console.log(activeItem.length)
 });
