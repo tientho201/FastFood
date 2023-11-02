@@ -48,6 +48,20 @@ breadcrumblinks.forEach((breadcrumbLink, index) => {
     });
 });
 
+const footerlists = document.querySelectorAll('.footer-link'); 
+footerlists.forEach((footerlist, index) => {
+    footerlist.addEventListener('click', function (e) {
+        e.preventDefault(); // Ngăn chặn hành vi mặc định của liên kết
+        const targetId = this.getAttribute('href');
+        const targetElement = document.querySelector(targetId);
+
+        if (targetElement) {
+            const duration = 1000; // Thời gian cuộn mượt
+            const topOffset = 130; // Khoảng cách top thêm vào
+            smoothScroll(targetElement, duration, topOffset);
+        }
+    });
+});
 // Xác định khi nào cuộn mượt để thêm lớp 'active' vào breadcrumb
 const targetElements = [
     document.getElementById('UuDai'),

@@ -30,17 +30,25 @@
     }
     .next{
         right: -38px;
-    
     }
     .prev{
         left: -38px;
-
     }
     .product-img>img {
         min-height: 187px;
     }
 }
-
+@media (min-width: 740px) {
+    #MonMoi,
+    #Combo1Nguoi,
+    #ComboNhom,
+    #GaRanGaQuay,
+    #BurgerComMiY,
+    #ThucAnNhe,
+    #ThucUong_TrangMieng{
+        display: block !important ;
+    }
+}
 @media (max-width: 740px) {
 
     @media (min-width: 576px) {
@@ -50,7 +58,6 @@
     }
 
     /* BREADCRUMB */
-
     .breadcrumb-link {
         border-radius: 4px;
     }
