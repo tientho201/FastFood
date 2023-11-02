@@ -25,7 +25,9 @@ window.onscroll = function () {
 };
 
 // 
-var toolbar = document.getElementById("navigation");
+let toolbreadcrumb = document.getElementById('breadcrumb');
+let toolbar = document.getElementById('navigation');
+let toolbclink = document.querySelectorAll('.breadcrumb-link');
 var distance = 0;
 
 function myFunction() {
@@ -34,9 +36,37 @@ function myFunction() {
     toolbar.style.animation = "menuMobileSlip 0.4s ease";
     toolbar.style.top = '0';
     toolbar.style.zIndex = '4';
+    toolbreadcrumb.style.borderTop = "2px solid #ccc";
+    toolbreadcrumb.style.position = "fixed";
+    toolbreadcrumb.style.animation = "menuMobileSlip 0.4s ease";
+    toolbreadcrumb.style.top = '58px';
+    toolbreadcrumb.style.zIndex = '4';
+    toolbreadcrumb.style.backgroundColor = "var(--top_header-color)";
+    toolbclink.forEach(function (value, index) {
+      value.onmouseover = function(e){
+        this.style.color = 'red'; 
+      }
+      value.onmouseout = function(e){
+        this.style.color = '#fff'
+      }
+      value.style.color = "#fff";})
   } else {
     toolbar.style.position = "relative";
     toolbar.style.top = distance + "px";
     toolbar.style.zIndex = '2';
+    toolbreadcrumb.style.borderTop = "none";
+    toolbreadcrumb.style.position = "relative";
+    toolbreadcrumb.style.top = distance + "px";
+    toolbreadcrumb.style.zIndex = '2';
+    toolbreadcrumb.style.backgroundColor = "#fff";
+    toolbclink.forEach(function (value, index) {
+      value.onmouseover = function(e){
+        this.style.color = 'red'; 
+      }
+      value.onmouseout = function(e){
+        this.style.color = '#20090950'
+      }
+      value.style.color = "#20090950";
+    });
   }
 }

@@ -44,7 +44,6 @@ function myFunction() {
       toolbar.style.top = '0';
       toolbar.style.zIndex = '4';
       toolbreadcrumb.style.borderTop = "2px solid #ccc";
-
       toolbreadcrumb.style.position = "fixed";
       toolbreadcrumb.style.animation = "menuMobileSlip 0.4s ease";
       toolbreadcrumb.style.top = '58px';
