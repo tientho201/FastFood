@@ -71,5 +71,11 @@ window.onload = function(){
             target.style.display = 'block';
         }
     }
+    if (window.location.hash === '#BurgerComMiY' ){
+        var target = document.querySelector('#BurgerComMiY');
+        if (target) {
+            target.style.display = 'block';
+        }
+    }
 }
 
