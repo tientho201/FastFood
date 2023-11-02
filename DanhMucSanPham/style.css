@@ -130,6 +130,7 @@
     background-color: #86818194;
 }
     /* Sản phẩm  */
+    #UuDai,
     #MonMoi,
     #Combo1Nguoi,
     #ComboNhom,
@@ -137,7 +138,7 @@
     #BurgerComMiY,
     #ThucAnNhe,
     #ThucUong_TrangMieng{
-        display: block ;
+        display: block  ;
     }
 #footer{
     margin-top: 32px;
