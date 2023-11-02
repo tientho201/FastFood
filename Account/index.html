@@ -44,6 +44,15 @@
                         type="password" class="form-control">
                     <span class="form-message"></span>
                 </div>
+     
+                <!-- trang admin phân biệt admin với user -->
+                <div class="form-group" id="distinguish-group" style="display: none;" >
+                    <label for="" class="form-label">Phân biệt Admin hay User</label>
+                    <select name="distinguish" id="distinguish">
+                        <option value="Admin" >Admin</option>
+                        <option value="User" selected>User</option>
+                    </select>
+                </div>
                 <button class="form-submit" type="submit">Đăng ký</button>
             </form>
             <form action="" method="GET" class="form" id="form-2">

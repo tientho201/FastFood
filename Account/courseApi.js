@@ -81,7 +81,7 @@ Validator({
                 const foundUser = apiData.find(value => value.email === userEmail);
                 if (foundUser) {
                     if (passWord === foundUser.password) {
-                        if (foundUser.fullname === 'ADMIN') {
+                        if (foundUser.distinguish === 'Admin') {
                             // Đăng nhập với quyền admin
                             alert("Đăng nhập thành công với tài khoản admin");
                             // Lưu thông tin đăng nhập vào localStorage
