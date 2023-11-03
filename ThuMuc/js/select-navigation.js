@@ -8,7 +8,7 @@ navi_links.forEach(function (navi_link, index) {
   }
 })
 
-// 
+//
 var navigation_close_on = document.querySelector('.navigation-menu__close');
 navigation_close_on.onclick = function(){
   document.querySelector('#navigation').style.display = 'none'
@@ -24,7 +24,7 @@ window.onscroll = function () {
   myFunction();
 };
 
-// 
+//
 let toolbreadcrumb = document.getElementById('breadcrumb');
 let toolbar = document.getElementById('navigation');
 let toolbclink = document.querySelectorAll('.breadcrumb-link');
@@ -35,7 +35,7 @@ function myFunction() {
     toolbar.style.position = "fixed";
     toolbar.style.animation = "menuMobileSlip 0.4s ease";
     toolbar.style.top = '0';
-    toolbar.style.zIndex = '4';
+    toolbar.style.zIndex = '5';
     toolbreadcrumb.style.borderTop = "2px solid #ccc";
     toolbreadcrumb.style.position = "fixed";
     toolbreadcrumb.style.animation = "menuMobileSlip 0.4s ease";
@@ -44,7 +44,7 @@ function myFunction() {
     toolbreadcrumb.style.backgroundColor = "var(--top_header-color)";
     toolbclink.forEach(function (value, index) {
       value.onmouseover = function(e){
-        this.style.color = 'red'; 
+        this.style.color = 'red';
       }
       value.onmouseout = function(e){
         this.style.color = '#fff'
@@ -53,7 +53,7 @@ function myFunction() {
   } else {
     toolbar.style.position = "relative";
     toolbar.style.top = distance + "px";
-    toolbar.style.zIndex = '2';
+    toolbar.style.zIndex = '4';
     toolbreadcrumb.style.borderTop = "none";
     toolbreadcrumb.style.position = "relative";
     toolbreadcrumb.style.top = distance + "px";
@@ -61,7 +61,7 @@ function myFunction() {
     toolbreadcrumb.style.backgroundColor = "#fff";
     toolbclink.forEach(function (value, index) {
       value.onmouseover = function(e){
-        this.style.color = 'red'; 
+        this.style.color = 'red';
       }
       value.onmouseout = function(e){
         this.style.color = '#20090950'

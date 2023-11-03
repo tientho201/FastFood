@@ -14,7 +14,7 @@
 #breadcrumb {
     position: relative;
     width: 100%;
-    z-index: 2;
+    /* z-index: 2; */
     display: block;
 
 }
@@ -53,3 +53,5 @@
     padding: 10px 0;
 }
 /* BREADCRUMB */
+
+
