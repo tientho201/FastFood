@@ -23,7 +23,6 @@ function Validator(options) {
 
         // Lấy ra các rules của selector
         var rules = selectorRules[rule.selector];
-        
         // Lặp qua từng rule & kiểm tra
         // Nếu có lỗi thì dừng việc kiểm
         for (var i = 0; i < rules.length; ++i) {
@@ -39,7 +38,6 @@ function Validator(options) {
             }
             if (errorMessage) break;
         }
-        
         if (errorMessage) {
             errorElement.innerText = errorMessage;
             getParent(inputElement, options.formGroupSelector).classList.add('invalid');
@@ -74,8 +72,7 @@ function Validator(options) {
                 if (typeof options.onSubmit === 'function') {
                     var enableInputs = formElement.querySelectorAll('[name]');
                     var formValues = Array.from(enableInputs).reduce(function (values, input) {
-                        
-                        switch(input.type) {
+                        switch (input.type) {
                             case 'radio':
                                 values[input.name] = formElement.querySelector('input[name="' + input.name + '"]:checked').value;
                                 break;
@@ -89,13 +86,15 @@ function Validator(options) {
                                 }
                                 values[input.name].push(input.value);
                                 break;
+                            case 'select-one':
+                                values[input.name] = input.value;
+                                break;
                             case 'file':
                                 values[input.name] = input.files;
                                 break;
                             default:
                                 values[input.name] = input.value;
                         }
-
                         return values;
                     }, {});
                     options.onSubmit(formValues);
@@ -120,7 +119,7 @@ function Validator(options) {
             var inputElements = formElement.querySelectorAll(rule.selector);
 
             Array.from(inputElements).forEach(function (inputElement) {
-               // Xử lý trường hợp blur khỏi input
+                // Xử lý trường hợp blur khỏi input
                 inputElement.onblur = function () {
                     validate(inputElement, rule);
                 }
@@ -130,7 +129,7 @@ function Validator(options) {
                     var errorElement = getParent(inputElement, options.formGroupSelector).querySelector(options.errorSelector);
                     errorElement.innerText = '';
                     getParent(inputElement, options.formGroupSelector).classList.remove('invalid');
-                } 
+                }
             });
         });
     }
@@ -146,53 +145,53 @@ function Validator(options) {
 // 2. Khi hợp lệ => không trả ra gì 
 
 
-Validator.isRequired = function (selector , message) {
+Validator.isRequired = function (selector, message) {
     return {
         selector: selector,
         test: function (value) {
-            return value.trim() ? undefined : message|| 'Vui lòng nhập trường này'
+            return value.trim() ? undefined : message || 'Vui lòng nhập trường này'
         }
     }
 }
 
-Validator.isEmail = function (selector , message) {
+Validator.isEmail = function (selector, message) {
 
     return {
         selector: selector,
         test: function (value) {
             var regex = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/
-            return regex.test(value) ? undefined : message ||'Trường này phải là email'
+            return regex.test(value) ? undefined : message || 'Trường này phải là email'
         }
     }
 }
-Validator.isminLength = function (selector, min,message ) {
+Validator.isminLength = function (selector, min, message) {
     return {
         selector: selector,
         test: function (value) {
-          return value.length >= min ? undefined :message|| `Vui lòng nhập tối thiểu ${min} kí tự`
+            return value.length >= min ? undefined : message || `Vui lòng nhập tối thiểu ${min} kí tự`
         }
     }
 }
 
-Validator.isConfirmed = function(selector , getConfirmValue , message){
-    return{
-        selector: selector , 
-        test: function(value){
+Validator.isConfirmed = function (selector, getConfirmValue, message) {
+    return {
+        selector: selector,
+        test: function (value) {
             var confirmValue = getConfirmValue();
-            return value  === confirmValue ? undefined : message || 'Giá trị nhập vào không chính xác'
+            return value === confirmValue ? undefined : message || 'Giá trị nhập vào không chính xác'
         }
     }
 }
 
 
 
-var DangNhap =$('#form-1 .DangNhap h4') ; 
-DangNhap.onclick = function(){
-    $('#form-1').style.display = "none"; 
+var DangNhap = $('#form-1 .DangNhap h4');
+DangNhap.onclick = function () {
+    $('#form-1').style.display = "none";
     $('#form-2').style.display = "block";
-} 
-var DangKy =$('#form-2 .DangKy h4') ; 
-DangKy.onclick = function(){
-    $('#form-1').style.display = "block" ; 
+}
+var DangKy = $('#form-2 .DangKy h4');
+DangKy.onclick = function () {
+    $('#form-1').style.display = "block";
     $('#form-2').style.display = "none";
 } 
