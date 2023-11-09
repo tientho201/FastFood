@@ -76,7 +76,7 @@
                                             <h3>Thông báo mới nhận</h3>
                                         </div>
                                         <ul class="header__notify-list">
-                                            <li class="header__notify-item header__notify-item--readed">
+                                            <!-- <li class="header__notify-item header__notify-item--readed">
                                                 <a href="" class="header__notify-link">
                                                     <img src="https://nhatluan.com/wp-content/uploads/2018/12/Shopee-logo.jpg"
                                                         class="header__notify-img" alt="">
@@ -87,43 +87,7 @@
                                                             trai</span>
                                                     </div>
                                                 </a>
-                                            </li>
-                                            <li class="header__notify-item ">
-                                                <a href="" class="header__notify-link">
-                                                    <img src="https://nhatluan.com/wp-content/uploads/2018/12/Shopee-logo.jpg"
-                                                        class="header__notify-img" alt="">
-                                                    <div class="header__notify-info">
-                                                        <span class="header__notify-name">Tui tên là Nguyễn Tiến Thọ
-                                                            fefew fnwej fnwj efj wef bwej fbe</span>
-                                                        <span class="header__notify-descriotion">Tiến Thọ đẹp
-                                                            trai</span>
-                                                    </div>
-                                                </a>
-                                            </li>
-                                            <li class="header__notify-item">
-                                                <a href="" class="header__notify-link">
-                                                    <img src="https://nhatluan.com/wp-content/uploads/2018/12/Shopee-logo.jpg"
-                                                        class="header__notify-img" alt="">
-                                                    <div class="header__notify-info">
-                                                        <span class="header__notify-name">Tui tên là Nguyễn Tiến
-                                                            Thọ</span>
-                                                        <span class="header__notify-descriotion">Tiến Thọ đẹp trai efwfe
-                                                            wfe wf wef wef wefw e fewf dsv sv sdvs dv dsv svsd</span>
-                                                    </div>
-                                                </a>
-                                            </li>
-                                            <li class="header__notify-item">
-                                                <a href="" class="header__notify-link">
-                                                    <img src="https://nhatluan.com/wp-content/uploads/2018/12/Shopee-logo.jpg"
-                                                        class="header__notify-img" alt="">
-                                                    <div class="header__notify-info">
-                                                        <span class="header__notify-name">Tui tên là Nguyễn Tiến Thọ ừvs
-                                                            wf wef ewfewf ewf wef ewfw efwe</span>
-                                                        <span class="header__notify-descriotion">Tiến Thọ đẹp trai
-                                                            fefewfwefwefecsdcvfvevewfe</span>
-                                                    </div>
-                                                </a>
-                                            </li>
+                                            </li> -->
                                         </ul>
                                         <footer class="header__notify-footer">
                                             <a href="" class="header__notify-footer--btn">Xem tất cả</a>
@@ -274,7 +238,7 @@
                                     class="navigation-nav__link navigation-nav__link-home active">Home</a>
                             </li>
                             <li class="navigation-nav__item navigation-nav__item-folder">
-                                <a  class="navigation-nav__link navigation-nav__link--no-select"> Danh Mục Sản Phẩm <i
+                                <a class="navigation-nav__link navigation-nav__link--no-select"> Danh Mục Sản Phẩm <i
                                         class="navigation-nav__item-icon-down ti-angle-down"></i>
                                 </a>
                                 <div class="navigation-nav__category">
@@ -352,7 +316,6 @@
                     <div class="mySlides fade">
                         <img src="../assets/img/logo/product-img4.jpg" style="width:100%">
                     </div>
-                
                 </div>
             </div>
             <!-- SILIDER -->
@@ -563,13 +526,17 @@
         <script src="../src/jquery.min.js"></script>
         <!-- Thêm tệp JavaScript của Slick -->
         <script src="../src/slick.min.js"></script>
-        <!-- Tự JS -->
-        <!-- jQuery Plugins -->
-        <script src="../js/select-navigation.js"></script>
+        <!-- Include Axios library from CDN -->
+        <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+        <!-- API -->
         <script src="../Account/courseApi.js"></script>
+        <script src="../ADMIN/src/controll/callApiNotify.js"></script>
+        <!-- Tự JS -->
+        <script src="../js/select-navigation.js"></script>
         <script src="../js/nameLogin.js"></script>
         <script src="../js/slider.js"> </script>
         <script src="../js/main.js"></script>
+        <script src="../js/showNotify.js"></script>
     </body>
 
 </html>

@@ -147,6 +147,7 @@ a:focus {
     padding: 10px;
     font-size: 1.6em;
     display: block;
+    cursor: pointer;
 }
 
 #sidebar ul li a:hover {
@@ -243,13 +244,14 @@ ul ul a {
     font-size: 3rem;
     font-weight: 600;
 }
+.img__notify,
 .img__product{
     width: 100%;
     margin-bottom: 10px;
 }
-#tableDanhSach img {
+.tableDanhSach img {
     display: block;
-    width: 50%;
+    width:30%;
     margin: 0 auto;
 }
 .table-hover tbody tr:hover{

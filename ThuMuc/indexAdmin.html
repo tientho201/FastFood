@@ -61,43 +61,7 @@
                                             <h3>Thông báo mới nhận</h3>
                                         </div>
                                         <ul class="header__notify-list">
-                                            <li class="header__notify-item header__notify-item--readed">
-                                                <a href="" class="header__notify-link">
-                                                    <img src="https://nhatluan.com/wp-content/uploads/2018/12/Shopee-logo.jpg"
-                                                        class="header__notify-img" alt="">
-                                                    <div class="header__notify-info">
-                                                        <span class="header__notify-name">Tui tên là Nguyễn Tiến
-                                                            Thọ</span>
-                                                        <span class="header__notify-descriotion">Tiến Thọ đẹp
-                                                            trai</span>
-                                                    </div>
-                                                </a>
-                                            </li>
-                                            <li class="header__notify-item ">
-                                                <a href="" class="header__notify-link">
-                                                    <img src="https://nhatluan.com/wp-content/uploads/2018/12/Shopee-logo.jpg"
-                                                        class="header__notify-img" alt="">
-                                                    <div class="header__notify-info">
-                                                        <span class="header__notify-name">Tui tên là Nguyễn Tiến Thọ
-                                                            fefew fnwej fnwj efj wef bwej fbe</span>
-                                                        <span class="header__notify-descriotion">Tiến Thọ đẹp
-                                                            trai</span>
-                                                    </div>
-                                                </a>
-                                            </li>
-                                            <li class="header__notify-item">
-                                                <a href="" class="header__notify-link">
-                                                    <img src="https://nhatluan.com/wp-content/uploads/2018/12/Shopee-logo.jpg"
-                                                        class="header__notify-img" alt="">
-                                                    <div class="header__notify-info">
-                                                        <span class="header__notify-name">Tui tên là Nguyễn Tiến
-                                                            Thọ</span>
-                                                        <span class="header__notify-descriotion">Tiến Thọ đẹp trai efwfe
-                                                            wfe wf wef wef wefw e fewf dsv sv sdvs dv dsv svsd</span>
-                                                    </div>
-                                                </a>
-                                            </li>
-                                            <li class="header__notify-item">
+                                            <!-- <li class="header__notify-item">
                                                 <a href="" class="header__notify-link">
                                                     <img src="https://nhatluan.com/wp-content/uploads/2018/12/Shopee-logo.jpg"
                                                         class="header__notify-img" alt="">
@@ -108,7 +72,7 @@
                                                             fefewfwefwefecsdcvfvevewfe</span>
                                                     </div>
                                                 </a>
-                                            </li>
+                                            </li>  -->
                                         </ul>
                                         <footer class="header__notify-footer">
                                             <a href="" class="header__notify-footer--btn">Xem tất cả</a>
@@ -156,7 +120,7 @@
                         <div class="header-search">
                             <input type="checkbox" hidden id="mobile-search-chechbox" class="header__search-checkbox">
                             <div class="header-search__input-wrap">
-                                <input type="text" class="header-search__input" placeholder="Tìm kiếm sản phẩm"> 
+                                <input type="text" class="header-search__input" placeholder="Tìm kiếm sản phẩm">
                                 <button class="header-search__btn">
                                     <i class="fa-solid fa-magnifying-glass"></i>
                                 </button>
@@ -442,9 +406,16 @@
             </footer>
             <!-- FOOTER -->
         </div>
+        <!-- Include Axios library from CDN -->
+        <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+        <!-- API -->
+        <script src="../Account/courseApi.js"></script>
+        <script src="../ADMIN/src/controll/callApiNotify.js"></script>
+        <!-- Tự JS -->
         <script src="./js/select-navigation.js"></script>
         <script src="./js/nameLogin.js"></script>
         <script src="./js/main.js"></script>
+        <script src="../js/showNotify.js"></script>
     </body>
 
 </html>

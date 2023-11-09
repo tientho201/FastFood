@@ -2,22 +2,6 @@
 document.querySelector('.product').onclick = function (e) {
     document.querySelector('.product-list').classList.toggle('active')
 }
-// Ảnh thêm sản phẩm
-const image_product = document.querySelector('.img__product')
-const input_link_img_product = document.querySelector('.link__img-product')
-input_link_img_product.addEventListener('change' , (e) => {
-    image_product.src = URL.createObjectURL(e.target.files[0]);
-})
-// Ảnh thêm thông báo
-const image_notify = document.querySelector('.img__notify')
-const input_link_img_notify = document.querySelector('.link__img-notify')
-input_link_img_notify.addEventListener('change' , (e) => {
-    image_notify.src = URL.createObjectURL(e.target.files[0]);
-})
-
-
-
-
 
 // Nút đóng mở 
 // Nút đóng mở thêm sản phẩm
@@ -30,10 +14,13 @@ const btnThemProduct = document.querySelector('#btnThemProduct');
 btnThemProduct.onclick = function(e){
     document.querySelector('.modal-product ').style.display = 'block'
     document.querySelector('.modal-product ').classList.remove('fade')
+    document.querySelector('#header-title-product').innerHTML = "Thêm Sản Phẩm"
+    document.querySelector('.btnAddUpdateProduct').innerHTML = `<button id="btnAddProduct" type="button" class="btn btn-success" onclick="addProduct()">Thêm Sản Phẩm</button>`
+    document.getElementById('resetFormProduct').reset();
 }
 
 
-// Nút đóng mở thêm sản phẩm
+// Nút đóng mở thêm account
 const btnDongAccount = document.querySelector('.btnDong-account'); 
 btnDongAccount.onclick = function(e){
     document.querySelector('.modal-account ').classList.add('fade')
@@ -43,6 +30,10 @@ const btnThemAccount = document.querySelector('#btnThemAccount');
 btnThemAccount.onclick = function(e){
     document.querySelector('.modal-account ').style.display = 'block'
     document.querySelector('.modal-account ').classList.remove('fade')
+    document.querySelector('#header-title-account').innerHTML = "Thêm Tài Khoản"
+    document.querySelector('.btnAddUpdateAccount').innerHTML = ` <button id="btnAddAccount" type="button" class="btn btn-success" onclick="addAccount()">Thêm Tài Khoản</button>`
+    document.getElementById('resetFormAccount').reset();
+
 }
 
 // Nút đóng mở thêm thông báo
@@ -55,6 +46,9 @@ const btnThemNotify = document.querySelector('#btnThemNotify');
 btnThemNotify.onclick = function(e){
     document.querySelector('.modal-notify ').style.display = 'block'
     document.querySelector('.modal-notify ').classList.remove('fade')
+    document.querySelector('#header-title-notify').innerHTML = "Thêm Thông Báo"
+    document.querySelector('.btnAddUpdateNotify').innerHTML = ` <button id="btnAddNotify" type="button" class="btn btn-success" onclick="addNotify()">Thêm Thông Báo</button>`
+    document.getElementById('resetFormNotify').reset();
 }
 // Nút đóng mở 
 
