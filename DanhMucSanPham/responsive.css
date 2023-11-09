@@ -51,6 +51,9 @@
     }
 }
 @media (max-width: 740px) {
+    .product-link{
+        height: auto;
+    }
 
     @media (min-width: 576px) {
         .product-item {
