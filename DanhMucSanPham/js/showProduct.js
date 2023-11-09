@@ -30,7 +30,7 @@ function renderProduct(data){
     var burgercommiy = "" ; 
     var thucannhe = "" ; 
     var thucuongtrangmieng = "" ; 
-    for (var i = data.length - 1 ; i >= 0 ; i--){
+    for (var i = 0 ; i < data.length ; i++){
         var ProductTemporary = data[i] ; 
         if(ProductTemporary.item === "UuDai" ){
             uudai += 
