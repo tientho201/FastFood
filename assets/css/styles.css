@@ -445,14 +445,14 @@ header {
 /* chưa có sản phẩm display img với mess (item none) */
 .header__cart-no-cart--img {
     width: 40%;
-    display: flex;
+    display: none;
     /*Display : flex*/
     margin: 32px auto 8px;
     object-fit: contain;
 }
 
 .header__cart-list-no-cart-mes {
-    display: flex;
+    display: none;
     /*display: block*/
     font-size: 1.4rem;
     margin-top: 12px;
@@ -461,7 +461,7 @@ header {
 }
 
 .header__cart-item {
-    display: none;
+    display: flex;
     /*display : flex*/
     cursor: pointer;
 }

@@ -49,7 +49,7 @@ function renderProduct(data){
                     </div>
                 </div>
             </a>
-            <a href="" class="product-buy"> Thêm </a>
+            <div  class="product-buy" onclick="addCartItem(${ProductTemporary.id})"> Thêm </div>
         </div>`
         }
         if(ProductTemporary.item === "MonMoi" ){
@@ -69,7 +69,7 @@ function renderProduct(data){
                     </div>
                 </div>
             </a>
-            <a href="" class="product-buy"> Thêm </a>
+            <div  class="product-buy" onclick="addCartItem(${ProductTemporary.id})"> Thêm </div>
         </div>`
         }
         if(ProductTemporary.item === "Combo1Nguoi" ){
@@ -89,7 +89,7 @@ function renderProduct(data){
                     </div>
                 </div>
             </a>
-            <a href="" class="product-buy"> Thêm </a>
+            <div  class="product-buy" onclick="addCartItem(${ProductTemporary.id})"> Thêm </div>
         </div>`
         }
         if(ProductTemporary.item === "ComboNhom" ){
@@ -109,7 +109,7 @@ function renderProduct(data){
                     </div>
                 </div>
             </a>
-            <a href="" class="product-buy"> Thêm </a>
+            <div  class="product-buy" onclick="addCartItem(${ProductTemporary.id})"> Thêm </div>
         </div>`
         }
         if(ProductTemporary.item === "GaRanGaQuay" ){
@@ -129,7 +129,7 @@ function renderProduct(data){
                     </div>
                 </div>
             </a>
-            <a href="" class="product-buy"> Thêm </a>
+            <div  class="product-buy" onclick="addCartItem(${ProductTemporary.id})"> Thêm </div>
         </div>`
         }
         if(ProductTemporary.item === "BurgerComMiY" ){
@@ -149,7 +149,7 @@ function renderProduct(data){
                     </div>
                 </div>
             </a>
-            <a href="" class="product-buy"> Thêm </a>
+            <div  class="product-buy" onclick="addCartItem(${ProductTemporary.id})"> Thêm </div>
         </div>`
         }
         if(ProductTemporary.item === "ThucAnNhe" ){
@@ -169,7 +169,7 @@ function renderProduct(data){
                     </div>
                 </div>
             </a>
-            <a href="" class="product-buy"> Thêm </a>
+            <div  class="product-buy" onclick="addCartItem(${ProductTemporary.id})"> Thêm </div>
         </div>`
         }
         if(ProductTemporary.item === "ThucUong_TrangMieng" ){
@@ -189,7 +189,7 @@ function renderProduct(data){
                     </div>
                 </div>
             </a>
-            <a href="" class="product-buy"> Thêm </a>
+            <div  class="product-buy" onclick="addCartItem(${ProductTemporary.id})"> Thêm </div>
         </div>`
         }
     }   
