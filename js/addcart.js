@@ -76,48 +76,32 @@ function renderCartItem(product) {
         `
         content += itemString;
     })
-    console.log(product)
+
 
     document.querySelector('.header__cart-list-item').innerHTML = content;
    
 }
-// function ChangeCart(){
+
+
+
+// Hàm ChangeCart không thay đổi, nó chỉ kiểm tra trạng thái của giỏ hàng
+// function ChangeCart() {
 //     var noCartImgElement = document.querySelector('.header__cart-no-cart--img');
 //     var noCartMesElement = document.querySelector('.header__cart-list-no-cart-mes');
 //     var cartItemElement = document.querySelector('.header__cart-item');
 
 //     if (noCartImgElement && noCartMesElement && cartItemElement) {
-//         if ( cart.listProduct.length == 0) {
+//         if (cart.listProduct.length !== 0) {
+//             noCartImgElement.style.display = "none";
+//             noCartMesElement.style.display = "none";
+//             cartItemElement.style.display = "flex";
+//         } else {
 //             noCartImgElement.style.display = "flex";
 //             noCartMesElement.style.display = "block";
 //             cartItemElement.style.display = "none";
-//         } else {
-//             noCartImgElement.style.display = "none";
-//             noCartMesElement.style.display = "none";
-//             cartItemElement.style.display = "flex ";
 //         }
 //     }
 // }
-
-
-// Hàm ChangeCart không thay đổi, nó chỉ kiểm tra trạng thái của giỏ hàng
-function ChangeCart() {
-    var noCartImgElement = document.querySelector('.header__cart-no-cart--img');
-    var noCartMesElement = document.querySelector('.header__cart-list-no-cart-mes');
-    var cartItemElement = document.querySelector('.header__cart-item');
-
-    if (noCartImgElement && noCartMesElement && cartItemElement) {
-        if (cart.listProduct.length !== 0) {
-            noCartImgElement.style.display = "none";
-            noCartMesElement.style.display = "none";
-            cartItemElement.style.display = "flex";
-        } else {
-            noCartImgElement.style.display = "flex";
-            noCartMesElement.style.display = "block";
-            cartItemElement.style.display = "none";
-        }
-    }
-}
 
 function addCartItem(id, qty = 1) {
     var product = products.getProductByID(id);
