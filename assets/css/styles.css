@@ -778,6 +778,7 @@ header {
 .navigation-nav__category {
     position: absolute;
     display: none;
+
 }
 
 .navigation-nav__category-list {

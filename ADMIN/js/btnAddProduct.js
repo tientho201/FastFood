@@ -51,7 +51,13 @@ btnThemNotify.onclick = function(e){
     document.getElementById('resetFormNotify').reset();
 }
 // Nút đóng mở 
-
+// Nút đóng Order
+const btnDongOrder = document.querySelector('.btnDong-order'); 
+btnDongOrder.onclick = function(e){
+    document.querySelector('.modal-order').classList.add('fade')
+    document.querySelector('.modal-order').style.display = 'none'
+}
+// Nút đóng Order
 
 // Menu để mở bảng hợp lí
 function open_giohang(){

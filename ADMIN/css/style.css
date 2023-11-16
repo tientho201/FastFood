@@ -257,3 +257,7 @@ ul ul a {
 .table-hover tbody tr:hover{
     background-color: #fff;
 }
+#resetFormOrder span{
+    font-size: 1.2rem;
+    margin-left: 8px;
+}

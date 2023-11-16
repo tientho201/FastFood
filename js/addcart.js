@@ -32,6 +32,9 @@ function Cart() {
             this.totalQuantity += item.quantity;
         });
     };
+    this.updateList = function(newA){
+        this.listProduct = newA ; 
+    }
 }
 
 var apiProduct = new CallApiProduct();

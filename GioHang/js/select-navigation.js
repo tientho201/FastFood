@@ -35,12 +35,12 @@ function myFunction() {
     toolbar.style.position = "fixed";
     toolbar.style.animation = "menuMobileSlip 0.4s ease";
     toolbar.style.top = '0';
-    toolbar.style.zIndex = '5';
+    toolbar.style.zIndex = '4';
     toolbreadcrumb.style.borderTop = "2px solid #ccc";
     toolbreadcrumb.style.position = "fixed";
     toolbreadcrumb.style.animation = "menuMobileSlip 0.4s ease";
     toolbreadcrumb.style.top = '58px';
-    toolbreadcrumb.style.zIndex = '4';
+    // toolbreadcrumb.style.zIndex = '4';
     toolbreadcrumb.style.backgroundColor = "var(--top_header-color)";
     toolbclink.forEach(function (value, index) {
       value.onmouseover = function(e){
@@ -53,11 +53,11 @@ function myFunction() {
   } else {
     toolbar.style.position = "relative";
     toolbar.style.top = distance + "px";
-    toolbar.style.zIndex = '4';
+    toolbar.style.zIndex = '2';
     toolbreadcrumb.style.borderTop = "none";
     toolbreadcrumb.style.position = "relative";
     toolbreadcrumb.style.top = distance + "px";
-    toolbreadcrumb.style.zIndex = '2';
+    // toolbreadcrumb.style.zIndex = '2';
     toolbreadcrumb.style.backgroundColor = "#fff";
     toolbclink.forEach(function (value, index) {
       value.onmouseover = function(e){

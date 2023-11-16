@@ -455,23 +455,23 @@
                                 <thead class="text-primary">
                                     <tr>
                                         <th class="nowrap">Tên Người Mua Hàng</th>
-                                        <th class="nowrap">Address</th>
-                                        <th class="nowrap">ID Sản Phẩm</th>
-                                        <th class="nowrap">Tên Sản Phẩm</th>
-                                        <th class="nowrap w-25">Hình Ảnh</th>
+                                        <th class="nowrap w-25">Tên Sản Phẩm</th>
+                                        <th class="nowrap w-25">Địa Chỉ</th>
+                                        <th class="nowrap">Số Điện Thoại</th>
                                         <th class="nowrap">Tổng Tiền</th>
+                                        <th class="nowrap">Trạng Thái</th>
                                         <th>
                                             <em class="fa fa-cog"></em>
                                             <br> Action
                                         </th>
                                     </tr>
                                 </thead>
-                                <tbody id="tableDanhSachCart" class="tableDanhSach">
-                                    <tr class="h5" style="font-size:1.4rem ;">
+                                <tbody id="tableDanhSachOrder" class="tableDanhSach">
+                                    <!-- <tr class="h5" style="font-size:1.4rem ;">
                                         <td>Thọ</td>
-                                        <td>Quangr Ngaxi</td>
-                                        <td>123</td>
-                                        <td>Combo 2 </td>
+                                        <td>combo2</td>
+                                        <td>VN</td>
+                                        <td>038447</td>
                                         <td>
                                             <img src="../assets/img/Item/ComBo1Nguoi.png" alt="">
                                         </td>
@@ -481,7 +481,7 @@
                                             <button class="border-0 ml-5 p-2 " style="cursor: pointer;">Chấp
                                                 Nhận</button>
                                         </td>
-                                    </tr>
+                                    </tr> -->
                                 </tbody>
                             </table>
                         </div>
@@ -507,9 +507,9 @@
                             <table class="table table-bordered table-hover myTable">
                                 <thead class="text-primary">
                                     <tr>
-                                        <th class="nowrap">Tên Thông Báo</th>
+                                        <th class="nowrap w-25">Tên Thông Báo</th>
                                         <th class="nowrap w-25">Hình Ảnh </th>
-                                        <th class="nowrap">Chi Tiết Thông Báo</th>
+                                        <th class="nowrap w-25">Chi Tiết Thông Báo</th>
                                         <th>
                                             <em class="fa fa-cog"></em>
                                             <br> Action
@@ -758,6 +758,64 @@
                                 Thông Báo</button>
                         </div>
                         <button id="btnDong" type="button" class="btn btn-danger btnDong-notify"
+                            data-dismiss="modal">Đóng</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="modal fade modal-order" id="myModalOrder">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <header class="head-form">
+                        <h2 id="header-title-notify">Thông Tin Đơn Hàng</h2>
+                    </header>
+                    <!-- Modal body -->
+                    <div class="modal-body">
+                        <form role="form" id="resetFormOrder">
+                            <div class="form-group">
+                                <div class="input-group">
+                                    <h3>Tên Người Mua</h3>
+                                </div>
+                                <span id="infoNameBuy"></span>
+                            </div>
+                            <div class="form-group">
+                                <div class="input-group">
+                                    <h3>Địa Chỉ</h3>
+                                </div>
+                                <span id="infoAddress"></span>
+                            </div>
+                            <div class="form-group">
+                                <div class="input-group">
+                                    <h3>Số Điện Thoại</h3>
+                                </div>
+                                <span id="infoPhone"></span>
+                            </div>
+                            <div class="form-group">
+                                <div class="input-group">
+                                    <h3>Tên Sản Phẩm</h3>
+                                </div>
+                                <span id="infoNameProduct">  </span>
+                            </div>
+                            <div class="form-group">
+                                <div class="input-group">
+                                    <h3>Tổng Tiền</h3>
+                                </div>
+                                <span id="infoToTalAmount"></span>
+                            </div>
+                            <div class="form-group">
+                                <div class="input-group">
+                                    <h3>Trạng Thái</h3>
+                                </div>
+                                <span id="infoTrangThai"></span>
+                            </div>
+                        </form>
+                    </div>
+                    <!-- Modal footer -->
+                    <div class="modal-footer" id="modal-footer-notify">
+                        <div class="btnAddUpdateOrder">
+                            <!-- <button id="btnAddOrder" type="button" class="btn btn-success" onclick="confirmOrder()">Xác Nhận Đơn Hàng</button> -->
+                        </div>
+                        <button id="btnDong" type="button" class="btn btn-danger btnDong-order"
                             data-dismiss="modal">Đóng</button>
                     </div>
                 </div>
