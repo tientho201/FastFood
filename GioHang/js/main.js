@@ -87,8 +87,8 @@ function tinhTongTien() {
     });
 
     // Hiển thị tổng số tiền
-    document.querySelector('.sotien').innerHTML = tongTien + '.000 đ';
-    return tongTien;
+    document.querySelector('.sotien').innerHTML = (tongTien > 0 ? tongTien : -tongTien) + '.000 đ';
+    return tongTien > 0 ? tongTien : -tongTien ;
 
 }
 
@@ -215,9 +215,15 @@ function getListOrder() {
             console.log(error);
         });
 }
-
+var isSubmitting = false;
 document.querySelector('.thanhtoan').addEventListener('click', function (e) {
     e.preventDefault();
+       // Kiểm tra nếu đang trong quá trình submit
+       if (isSubmitting) {
+        return;
+    }
+
+
     var today = new Date();
     var phone = document.querySelector('#nhapSĐT').value
     var address = document.querySelector('#nhapaddress').value
@@ -237,12 +243,14 @@ document.querySelector('.thanhtoan').addEventListener('click', function (e) {
     
         if (phone != "" && address != "" && /^\d+$/.test(phone)) {
             var promise = apiOrder.addOrder(orderData);
+            isSubmitting = true;
             promise
                 .then(function (data) {
                     getListOrder();
                     cart.listProduct = [];
                     setCartLocalStoregrade(cart.listProduct);
                     NotiAlert("success", "Thêm Đơn Hàng", 1500);
+                    
                     setTimeout(function () {
                         location.reload();
                     }, 2000);
