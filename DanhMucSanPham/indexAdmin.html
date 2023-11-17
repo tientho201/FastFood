@@ -144,9 +144,9 @@
                                     <span class="header__cart-list-no-cart-mes">Chưa có sản phẩm</span>
                                     <ul class="header__cart-list-item">
                                         <!-- Cart item -->
-                                       
                                     </ul>
-                                    <a href="../GioHang/indexAdmin.html" class="header__cart-view-cart btn btn--primary  ">Xem giỏ hàng</a>
+                                    <a href="../GioHang/indexAdmin.html"
+                                        class="header__cart-view-cart btn btn--primary  ">Xem giỏ hàng</a>
                                 </div>
                             </div>
                         </div>
@@ -258,25 +258,26 @@
                     </div>
                     <div id="GaRanGaQuay">
                         <h1 class="product-title">GÀ RÁN - GÀ QUAY</h1>
-                        <div class=" row row-cols-xl-4 row-cols-sm-2 row-cols-md-2 row-cols-lg-3 row-cols-1 product-list__GaRanGaQuay ">
+                        <div
+                            class=" row row-cols-xl-4 row-cols-sm-2 row-cols-md-2 row-cols-lg-3 row-cols-1 product-list__GaRanGaQuay ">
                         </div>
                     </div>
                     <div id="BurgerComMiY">
                         <h1 class="product-title">BURGER - CƠM - MÌ Ý</h1>
-                        <div class="row row-cols-xl-4 row-cols-sm-2 row-cols-md-2 row-cols-lg-3 row-cols-1 product-list__BurgerComMiY ">
-                         
+                        <div
+                            class="row row-cols-xl-4 row-cols-sm-2 row-cols-md-2 row-cols-lg-3 row-cols-1 product-list__BurgerComMiY ">
                         </div>
                     </div>
                     <div id="ThucAnNhe">
                         <h1 class="product-title">THỨC ĂN NHẸ</h1>
-                        <div class="row row-cols-xl-4 row-cols-sm-2 row-cols-md-2 row-cols-lg-3 row-cols-1 product-list__ThucAnNhe">
-                           
+                        <div
+                            class="row row-cols-xl-4 row-cols-sm-2 row-cols-md-2 row-cols-lg-3 row-cols-1 product-list__ThucAnNhe">
                         </div>
                     </div>
                     <div id="ThucUong_TrangMieng">
                         <h1 class="product-title">THỨC UỐNG & TRÁNG MIỆNG</h1>
-                        <div class="row row-cols-xl-4 row-cols-sm-2 row-cols-md-2 row-cols-lg-3 row-cols-1 product-list__ThucUong_TrangMieng">
-                            
+                        <div
+                            class="row row-cols-xl-4 row-cols-sm-2 row-cols-md-2 row-cols-lg-3 row-cols-1 product-list__ThucUong_TrangMieng">
                         </div>
                     </div>
                 </div>
@@ -377,6 +378,28 @@
             </footer>
             <!-- FOOTER -->
         </div>
+        <!-- Modal -->
+        <div class="modalProduct">
+            <div class="khungchitietsanpham">
+                <div class="tam">
+                    <div class="chitietanh">
+                        <img src="" alt="" class="anhchitietsanpham" >
+                    </div>
+                    <div class="thongtinchitietsanpham">
+                        <h1 class="titleDetail"></h1>
+                        <div class="priceDetail">
+                            <div class="pname">Giá bán:</div>
+                            <div class="pnews"></div>
+                        </div>
+                        <div class="infoProduct">
+                            <p></p>
+                        </div>
+                       
+                    </div>
+
+                </div>
+            </div>
+        </div>
         <!-- jQuery Plugins -->
         <!-- Thêm thư viện jQuery trước -->
         <!-- Thêm thư viện jQuery trước -->
@@ -398,6 +421,16 @@
         <script src="../js/showNotify.js"></script>
         <script src="./js/showProduct.js"></script>
         <script src="../js/addcart.js"></script>
+
+        <script >
+            var modalProduct = document.querySelector('.modalProduct')
+       
+            function hideModalProduct(){
+                modalProduct.classList.remove('open')
+            }
+            modalProduct.addEventListener('click' , hideModalProduct);
+            document.querySelector('.khungchitietsanpham').addEventListener('click' , function(event){ event.stopPropagation();})
+        </script>
     </body>
 
 </html>

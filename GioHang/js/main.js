@@ -218,7 +218,7 @@ function getListOrder() {
 
 document.querySelector('.thanhtoan').addEventListener('click', function (e) {
     e.preventDefault();
-
+    var today = new Date();
     var phone = document.querySelector('#nhapSĐT').value
     var address = document.querySelector('#nhapaddress').value
     var isValid = true;
@@ -231,7 +231,8 @@ document.querySelector('.thanhtoan').addEventListener('click', function (e) {
             trangthai: "Chờ xác nhận",
             phone: phone,
             address: address,
-            email : user.email
+            email : user.email,
+            date : today.getDate() +'/'+ (today.getMonth() + 1) +'/' + today.getFullYear() + "  " + today.getHours() + ":" + today.getMinutes() +":" + today.getSeconds()  
         }
     
         if (phone != "" && address != "" && /^\d+$/.test(phone)) {

@@ -24,7 +24,8 @@ function renderOrder(data) {
                 <td>${tempOrder.nameproduct}</td>
                 <td>${tempOrder.address}</td>
                 <td>${tempOrder.phone}</td>
-                <td>${tempOrder.totalAmount}.000 đ</td>
+                <td>${tempOrder.totalAmount}.000đ</td>
+                <td>${tempOrder.date}</td>
                 <td>${tempOrder.trangthai}</td>
                 <td class="action_${tempOrder.id}">
                     Đơn Hàng Đã Hủy
@@ -38,7 +39,8 @@ function renderOrder(data) {
                 <td>${tempOrder.nameproduct}</td>
                 <td>${tempOrder.address}</td>
                 <td>${tempOrder.phone}</td>
-                <td>${tempOrder.totalAmount}.000 đ</td>
+                <td>${tempOrder.totalAmount}.000đ</td>
+                <td>${tempOrder.date}</td>
                 <td>${tempOrder.trangthai}</td>
                 <td class="action_${tempOrder.id}">
                     <button class="border-0 p-2 btn-danger " style="cursor: pointer;" onclick= "ReviewOrder(${tempOrder.id})" >Review</button>
@@ -52,7 +54,8 @@ function renderOrder(data) {
                 <td>${tempOrder.nameproduct}</td>
                 <td>${tempOrder.address}</td>
                 <td>${tempOrder.phone}</td>
-                <td>${tempOrder.totalAmount}.000 đ</td>
+                <td>${tempOrder.totalAmount}.000đ</td>
+                <td>${tempOrder.date}</td>
                 <td>${tempOrder.trangthai}</td>
                 <td class="action_${tempOrder.id}">
                     <button class="border-0 p-2 btn-danger" style="cursor: pointer;" onclick = "RefuseOrder(${tempOrder.id})">Từ Chối</button>
@@ -98,6 +101,7 @@ function InfoOrder(data) {
     document.getElementById('infoNameProduct').innerHTML = data.nameproduct;
     document.getElementById('infoToTalAmount').innerHTML = data.totalAmount + ".000đ";
     document.getElementById('infoTrangThai').innerHTML = data.trangthai;
+    document.getElementById('infoTime').innerHTML = data.date
     document.querySelector('.modal-order').style.display = 'block';
     document.querySelector('.modal-order').classList.remove('fade');
     document.querySelector('.btnAddUpdateOrder').innerHTML = `<button id="btnAddOrder" type="button" class="btn btn-success" onclick="confirmOrder(${data.id})">Xác Nhận Đơn Hàng</button>`
@@ -135,8 +139,11 @@ function ReviewInfoOrder(data) {
     document.getElementById('infoNameProduct').innerHTML = data.nameproduct;
     document.getElementById('infoToTalAmount').innerHTML = data.totalAmount + ".000đ";
     document.getElementById('infoTrangThai').innerHTML = data.trangthai;
+    document.getElementById('infoTime').innerHTML = data.date
     document.querySelector('.modal-order').style.display = 'block';
     document.querySelector('.modal-order').classList.remove('fade');
+    document.querySelector('.btnAddUpdateOrder').innerHTML = ``
+
 }
 function ReviewOrder(id){
     var promise = apiOrder.getOrder(id);

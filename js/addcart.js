@@ -105,7 +105,20 @@ function renderCartItem(product) {
 //         }
 //     }
 // }
-
+function themDetail(id, qty = 1) {
+    var product = products.getProductByID(id);
+    var cartItem = { product, quantity: qty };
+    if (!cart.listProduct.find((item) => item.product.id == id)) {
+        cart.listProduct.push(cartItem);
+    } else {
+        var index = cart.listProduct.findIndex((item) => item.product.id == id);
+        cart.listProduct[index].quantity += qty;
+    }
+    cart.tinhTotalPrice();
+    cart.tinhTotalQuantity();
+    setCartLocalStoregrade(cart.listProduct);
+    renderCartItem(cart);
+}
 function addCartItem(id, qty = 1) {
     var product = products.getProductByID(id);
     var cartItem = { product, quantity: qty };

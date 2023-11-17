@@ -211,9 +211,18 @@ function detailProduct(id){
         document.querySelector('.pnews').innerHTML = result.data.gia +"đ"
         document.querySelector('.infoProduct').innerHTML = result.data.detail
         document.querySelector('.modalProduct').classList.add('open') ; 
-        document.querySelector('#nutthem').innerHTML = `<button class="themDetail" onclick = "themDetail(${result.data.id})">Thêm</button>`
     })
     .catch(function(error) {
         console.log(error);
     });
+}
+function addCartItem(id){
+    var promise = apiProduct.getProduct(id) ; 
+    promise
+        .then(function(result){
+            alert("Bạn Chưa Đăng Nhập")
+        })
+        .catch(function(error) {
+            console.log(error);
+        });
 }
