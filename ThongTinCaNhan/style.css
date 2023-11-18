@@ -1,0 +1,96 @@
+.top-header__navbar-item:hover .header__notify {
+    display: block;
+}
+
+.top-header__navbar-item--link {
+    cursor: pointer;
+}
+
+.top-header__navbar-item:hover .top-header__navbar-user-menu {
+    display: block;
+}
+
+/* BREADCRUMB */
+#breadcrumb {
+    position: relative;
+    width: 100%;
+    /* z-index: 2; */
+    display: block;
+
+}
+
+.breadcrumb-category {
+    display: block;
+    padding-bottom: 8px;
+    position: relative;
+
+}
+
+.breadcrumb-list {
+    display: flex;
+
+
+}
+
+.breadcrumb-item {
+
+    margin-top: 10px;
+    list-style: none;
+}
+.breadcrumb-item>a{
+    padding: 10px 8px;
+}
+.breadcrumb-item>a:hover{
+    color: red;
+}
+.breadcrumb-link {
+    text-decoration: none;
+    color: #20090950;
+    font-size: 2rem;
+    text-align: center;
+    display: block;
+    width: 100%;
+    padding: 10px 0;
+}
+/* BREADCRUMB */
+
+.khungForm h2{
+    font-size: 30px;
+    font-weight: 300;
+    margin: 16px 8px;
+    border-bottom: 1px solid #ccc;
+    padding-bottom: 20px;
+    color: red;
+}
+.tam{
+    display: flex;
+}
+.form-group{
+    display: inline-block;
+    margin-left: 100px;
+    margin-top: 40px;
+}
+.form-group h4 {
+    font-size: 32px;
+}
+.form-group span , #password , #name {
+    margin-left: 100px;
+    font-size: 24px;
+    display: block;
+    margin-bottom: 12px;
+}
+#name ,
+#password {
+    border: none;
+}
+.passwordChange{
+    display: flex;
+}
+.passwordChange span{
+    font-size: 16px;
+    color: blue;
+    cursor: pointer;
+}
+.passwordChange span:hover{
+    color: rgba(0, 0, 255, 0.665);
+}

@@ -1,0 +1,105 @@
+.top-header__navbar-item:hover .header__notify {
+    display: block;
+}
+
+.top-header__navbar-item--link {
+    cursor: pointer;
+}
+
+.top-header__navbar-item:hover .top-header__navbar-user-menu {
+    display: block;
+}
+
+/* BREADCRUMB */
+#breadcrumb {
+    position: relative;
+    width: 100%;
+    /* z-index: 2; */
+    display: block;
+
+}
+
+.breadcrumb-category {
+    display: block;
+    padding-bottom: 8px;
+    position: relative;
+
+}
+
+.breadcrumb-list {
+    display: flex;
+
+
+}
+
+.breadcrumb-item {
+
+    margin-top: 10px;
+    list-style: none;
+}
+.breadcrumb-item>a{
+    padding: 10px 8px;
+}
+.breadcrumb-item>a:hover{
+    color: red;
+}
+.breadcrumb-link {
+    text-decoration: none;
+    color: #20090950;
+    font-size: 2rem;
+    text-align: center;
+    display: block;
+    width: 100%;
+    padding: 10px 0;
+}
+/* BREADCRUMB */
+
+/*SECTION*/
+.container .bill h2 {
+    font-size: 22pt;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.container .bill .content .billContent {
+    border: 1px solid rgb(247, 238, 240);
+    background-color: rgb(247, 238, 240);
+    border-radius: 10px;
+    margin: 10px;
+    display: flex;
+}
+
+
+.container .bill .content .billContent div:nth-child(1) {
+    width: 40%;
+    text-align: center;
+}
+
+.container .bill .content .billContent div {
+    width: 20%;
+    text-align: center;
+    font-size: 12pt;
+    font-weight: 400;
+    margin: 10px;
+}
+
+.container .bill .list-bill {
+    display: flex;
+}
+
+.container .bill .list-bill div:nth-child(1) {
+    width: 40%;
+    text-align: center;
+}
+
+.container .bill .list-bill div {
+    width: 20%;
+    text-align: center;
+    font-size: 16pt;
+    margin-bottom: 5px;
+}
+/*SECTION*/
+
+
+
+

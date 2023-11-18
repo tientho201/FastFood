@@ -20,9 +20,6 @@
     </head>
 
     <body>
-       
-
-       
         <div id="main">
             <!-- HEADER -->
             <header>
@@ -31,7 +28,26 @@
                     <div class="container">
                         <nav class="top-header__navbar row-cols-1 row-cols-lg-1 row-cols-md-1 row-cols-sm-1">
                             <ul class="top-header__navbar-list">
-                              
+                                <li class="top-header__navbar-item">
+                                    <a href="tel:+84384475805" class="top-header__navbar-item--link">
+                                        <i class="top-header__navbar-item--icon fa fa-phone"></i>
+                                        <span class="hide-on-mobile">+84384475805 </span>
+                                    </a>
+                                </li>
+                                <li class="top-header__navbar-item">
+                                    <a href="mailto:email@gmail.com" class="top-header__navbar-item--link"
+                                        target="_blank">
+                                        <i class="top-header__navbar-item--icon fa-solid fa-envelope"></i>
+                                        <span class="hide-on-mobile"> email@gmail.com </span>
+                                    </a>
+                                </li>
+                                <li class="top-header__navbar-item">
+                                    <a href="https://www.google.com/maps/place/Tr%C6%B0%E1%BB%9Dng+%C4%90%E1%BA%A1i+h%E1%BB%8Dc+S%C3%A0i+G%C3%B2n/@10.7599224,106.6796834,17z/data=!3m1!4b1!4m6!3m5!1s0x31752f1b7c3ed289:0xa06651894598e488!8m2!3d10.7599171!4d106.6822583!16s%2Fm%2F02qvnkv?hl=vi-VN&entry=ttu"
+                                        class="top-header__navbar-item--link" target="_blank">
+                                        <i class="top-header__navbar-item--icon fa-solid fa-location-dot"></i>
+                                        <span class="hide-on-mobile"> 273 Đ.An Dương Vương </span>
+                                    </a>
+                                </li>
                             </ul>
                             <ul class="top-header__navbar-list">
                                 <li class="top-header__navbar-item">
@@ -45,7 +61,18 @@
                                             <h3>Thông báo mới nhận</h3>
                                         </div>
                                         <ul class="header__notify-list">
-                                          
+                                            <!-- <li class="header__notify-item">
+                                                <a href="" class="header__notify-link">
+                                                    <img src="https://nhatluan.com/wp-content/uploads/2018/12/Shopee-logo.jpg"
+                                                        class="header__notify-img" alt="">
+                                                    <div class="header__notify-info">
+                                                        <span class="header__notify-name">Tui tên là Nguyễn Tiến Thọ ừvs
+                                                            wf wef ewfewf ewf wef ewfw efwe</span>
+                                                        <span class="header__notify-descriotion">Tiến Thọ đẹp trai
+                                                            fefewfwefwefecsdcvfvevewfe</span>
+                                                    </div>
+                                                </a>
+                                            </li>  -->
                                         </ul>
                                         <footer class="header__notify-footer">
                                             <a href="" class="header__notify-footer--btn">Xem tất cả</a>
@@ -59,7 +86,7 @@
                                     </div>
                                     <ul class="top-header__navbar-user-menu">
                                         <li class="top-header__navbar-user-item">
-                                            <a href="../ThongTinCaNhan/indexAdmin.html">Tài khoản của tôi</a>
+                                            <a href="./indexAdmin.html">Tài khoản của tôi</a>
                                         </li>
                                         <li class="top-header__navbar-user-item top-header__navbar-user-item--admin">
                                             <a href="../ADMIN/index.html">Trang ADMIN</a>
@@ -113,9 +140,9 @@
                                     <span class="header__cart-list-no-cart-mes">Chưa có sản phẩm</span>
                                     <ul class="header__cart-list-item">
                                         <!-- Cart item -->
-                                        
                                     </ul>
-                                    <a href="./indexAdmin.html" class="header__cart-view-cart btn btn--primary  ">Xem giỏ hàng</a>
+                                    <a href="../GioHang/indexAdmin.html"
+                                        class="header__cart-view-cart btn btn--primary  ">Xem giỏ hàng</a>
                                 </div>
                             </div>
                         </div>
@@ -142,7 +169,7 @@
                                     class="navigation-nav__link navigation-nav__link-home ">Home</a>
                             </li>
                             <li class="navigation-nav__item navigation-nav__item-folder">
-                                <a class="navigation-nav__link navigation-nav__link--no-select"> Danh Mục Sản Phẩm <i
+                                <a class="navigation-nav__link navigation-nav__link--no-select "> Danh Mục Sản Phẩm <i
                                         class="navigation-nav__item-icon-down ti-angle-down"></i>
                                 </a>
                                 <div class="navigation-nav__category">
@@ -211,242 +238,160 @@
                     <div class="breadcrumb-category">
                         <ul class="breadcrumb-list">
                             <li class="breadcrumb-item">
-                                <a class="breadcrumb-link" href="../TrangChu/indexAdmin.html">Trang Chủ</a>
+                                <a class="breadcrumb-link" href="../ThuMuc/indexAdmin.html">Trang Chủ</a>
                             </li>
-                          
                             <li class="breadcrumb-item">
                                 <div class="breadcrumb-link">/</div>
                             </li>
                             <li class="breadcrumb-item">
-                                <a class="breadcrumb-link" href="indexAdmin.html">Giỏ Hàng</a>
+                                <a class="breadcrumb-link" href="./indexAdmin.html">Thông Tin Cá Nhân</a>
                         </ul>
                     </div>
                 </div>
             </div>
-
-
-
-            
             <!-- BREADCRUMB -->
             <!-- SECTION -->
             <div id="section">
-                <div class="container" >
-                    <div class="bill">
-                        <form action="">
-                            <div>
-                                <i class="ti-arrow-left" style="font-size: 16px; padding: 8px; display: block; cursor: pointer; float: left;" onclick="quaylaigiohang()"></i>
-                            </div>
-                            <table>
-                                <thead>
-                                    <tr>
-                                        
-                                        <th colspan="2">Thông tin sản phẩm</th>
-                                        <th>Số lương</th>
-                                        <th>Giá</th>
-                                        <th></th>
-                                    </tr>   
-                                </thead>
-                                <tbody class="spchonmua">
-                                
-                                </tbody>
-
-                
-                                <tbody class="tableInfo" >
-                                    <tr>
-                                        <th  >Họ Và Tên</th>
-                                        <th >SĐT</th>
-                                        <th colspan="2">Địa Chỉ</th>
-                                        <th>Trạng Thái</th>
-                                    </tr>
-                                </tbody>
-                          
-                                <tbody class="thongtinnguoimua" >
-                                    <tr>
-                                
-                                        <th ></th>
-                                        <th ></th>
-                                        <th colspan="2"></th>
-                                        <th  style="color: #928f8f; font-weight: 400;">Chờ Xác Nhận</th>
-                                
-                                    </tr>
-                                </tbody>
-                                <tbody  >
-                                    <tr>
-                                        <th ></th>
-                                        <th style="font-weight: 300; color: red;"><span id="chuaNhapSDT"></span></th>
-                                        <th colspan="2" style="font-weight: 300; color: red;"><span id="chuaNhapAddress"></th>
-                                        <th></th>
-                                    </tr>
-                                </tbody>
-                                <tbody>
-                                    <tr>
-                                        <th></th>
-                                        <th></th>
-                                        <th>Tổng tiền</th>
-                                        <th class="tienthanhtoan"></th>
-                                        <th><button class="thanhtoan" style="cursor: pointer;" >Thanh toán</button></th>
-                                    </tr>
-                                </tbody>
-    
-                            </table>
-                        </form>
+                <form action="" method="post" id="form">
+                  <div class="container">
+                    <div class="khungForm">
+                      <h2>Hồ sơ của tôi</h2>
+                      <div class="tam">
+                        <!-- <div class="form-group">
+                            <h4>Email</h4>
+                            <h4>Tên</h4>
+                            <h4>Mật Khẩu</h4>
+                        </div>
+                        <div class="form-group">
+                          <span>Nguyễn Tiến Thọ</span>
+                          <span>Nguyễn Tiến Thọ</span>
+                          <div class="passwordChange">
+                            <input type="password" name="password" id="password">
+                            <span>thay đổi</span>
+                          </div>
+                        </div> -->
+                      </div>
                     </div>
-                    
-                </div>
-                <div class="giohang">
-                    <div class="container">
-                        <div class="thongtindh">
-                            <ul class="sanpham">
-                                <li>Sản phẩm</li>
-                            </ul>
-                            <ul class="thongtinsp">
-                                <li class="textthongtinsp1">Đơn giá</li>
-                                <li class="textthongtinsp2">Số lượng</li>
-                                <li class="textthongtinsp3">Thao tác</li>
-                            </ul>
+                  </div>
+              </form>
+              </div>
+        <!-- SECTION -->
+        <!-- FOOTER -->
+        <footer id="footer">
+            <div class="container">
+                <div class="footer-elemnt row row-cols-xl-4 row-cols-lq-4  row-cols-md-2 row-cols-sm-2 row-cols-1">
+                    <div class="footer-block">
+                        <h3 class="footer-heading">DANH MỤC SẢN PHẨM</h3>
+                        <ul class="footer-list">
+                            <li class="footer-item">
+                                <a href="../DanhMucSanPham/indexAdmin.html#UuDai" class="footer-link">Ưu Đãi</a>
+                            </li>
+                            <li class="footer-item">
+                                <a href="../DanhMucSanPham/indexAdmin.html.html#MonMoi" class="footer-link">Món Mới</a>
+                            </li>
+                            <li class="footer-item">
+                                <a href="../DanhMucSanPham/indexAdmin.html.html#Combo1Nguoi" class="footer-link"> Combo
+                                    1 Người</a>
+                            </li>
+                            <li class="footer-item">
+                                <a href="../DanhMucSanPham/indexAdmin.html.html#ComboNhom" class="footer-link">Combo
+                                    Nhóm</a>
+                            </li>
+                            <li class="footer-item">
+                                <a href="../DanhMucSanPham/indexAdmin.html.html#GaRanGaQuay" class="footer-link">Gà Rán
+                                    - Gà Quay</a>
+                            </li>
+                            <li class="footer-item">
+                                <a href="../DanhMucSanPham/indexAdmin.html.html#BurgerComMiY" class="footer-link">Burger
+                                    - Cơm - Mì Ý</a>
+                            </li>
+                            <li class="footer-item">
+                                <a href="../DanhMucSanPham/indexAdmin.html.html#ThucAnNhe" class="footer-link">Thức Ăn
+                                    Nhẹ</a>
+                            </li>
+                            <li class="footer-item">
+                                <a href="../DanhMucSanPham/indexAdmin.html.html#ThucUong_TrangMieng"
+                                    class="footer-link">Thức Uống & Tráng Miệng</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="footer-block">
+                        <h3 class="footer-heading">ABOUT US</h3>
+                        <ul class="footer-list">
+                            <li class="footer-item">
+                                <a href="tel:+84384475805" class="footer-link">
+                                    <i class="footer-icon fa fa-phone"></i>
+                                    <span>+84384475805 </span>
+                                </a>
+                            </li>
+                            <li class="footer-item">
+                                <a href="mailto:email@gmail.com" class="footer-link" target="_blank">
+                                    <i class="footer-icon fa-solid fa-envelope"></i>
+                                    <span> email@gmail.com </span>
+                                </a>
+                            </li>
+                            <li class="footer-item">
+                                <a href="https://www.google.com/maps/place/Tr%C6%B0%E1%BB%9Dng+%C4%90%E1%BA%A1i+h%E1%BB%8Dc+S%C3%A0i+G%C3%B2n/@10.7599224,106.6796834,17z/data=!3m1!4b1!4m6!3m5!1s0x31752f1b7c3ed289:0xa06651894598e488!8m2!3d10.7599171!4d106.6822583!16s%2Fm%2F02qvnkv?hl=vi-VN&entry=ttu"
+                                    class="footer-link" target="_blank">
+                                    <i class=" footer-icon fa-solid fa-location-dot"></i>
+                                    <span> 273 Đ.An Dương Vương </span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="footer-block">
+                        <h3 class="footer-heading">THEO DÕI</h3>
+                        <ul class="footer-list">
+                            <li class="footer-item">
+                                <a href="" class="footer-link">
+                                    <i class="footer-icon__fb fa-brands fa-facebook"></i> Facebook </a>
+                            </li>
+                            <li class="footer-tem">
+                                <a href="" class="footer-link">
+                                    <i class="footer-icon__ins fa-brands fa-instagram"></i> Instagram </a>
+                            </li>
+                            <li class="footer-item">
+                                <a href="" class="footer-link">
+                                    <i class="footer-icon__ld fa-brands fa-linkedin"></i> Linkedin </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="footer-block">
+                        <h3 class="footer-heading">VÀO CỬA HÀNG TRÊN ỨNG DỤNG</h3>
+                        <div class="footer__download">
+                            <a href="" class="footer__download-app-link">
+                                <img src="../assets/img/logo/ch_play.png" alt="" class="footer__download-app-img">
+                            </a>
+                            <a href="" class="footer__download-app-link">
+                                <img src="../assets/img/logo/app_store.png" alt="" class="footer__download-app-img">
+                            </a>
                         </div>
-                
-                        <div class="content">
-                             
-                        
-                       </div> 
-                
-                        <div class="Muahang">
-                            
-                            <ul class="left">
-                                <li> <input type="checkbox" class="chonall"></li>
-                                <li class="all">Chọn tất cả</li>
-                                <li><button value="" class="xoaALL" onclick="deleteall()">Xóa</button></li>
-                            </ul>
-                
-                            <ul class="right">
-                                 <li class="tongtien">Tổng số tiền:</li>
-                                <li class="sotien">0.000 đ</li>    
-                                <li ><button class="muahang" onclick="muahang()">Mua hàng</button></li>
-                            </ul>
-                              
-                        </div>
-                           
-                        
                     </div>
                 </div>
             </div>
-            <!-- SECTION -->
-            <!-- FOOTER -->
-            <footer id="footer">
-                <div class="container">
-                    <div class="footer-elemnt row row-cols-xl-4 row-cols-lq-4  row-cols-md-2 row-cols-sm-2 row-cols-1">
-                        <div class="footer-block">
-                            <h3 class="footer-heading">DANH MỤC SẢN PHẨM</h3>
-                            <ul class="footer-list">
-                                <li class="footer-item">
-                                    <a href="../DanhMucSanPham/indexAdmin.html#UuDai" class="footer-link">Ưu Đãi</a>
-                                </li>
-                                <li class="footer-item">
-                                    <a href="../DanhMucSanPham/indexAdmin.html#MonMoi" class="footer-link">Món Mới</a>
-                                </li>
-                                <li class="footer-item">
-                                    <a href="../DanhMucSanPham/indexAdmin.html#Combo1Nguoi" class="footer-link"> Combo 1
-                                        Người</a>
-                                </li>
-                                <li class="footer-item">
-                                    <a href="../DanhMucSanPham/indexAdmin.html#ComboNhom" class="footer-link">Combo
-                                        Nhóm</a>
-                                </li>
-                                <li class="footer-item">
-                                    <a href="../DanhMucSanPham/indexAdmin.html#GaRanGaQuay" class="footer-link">Gà Rán -
-                                        Gà Quay</a>
-                                </li>
-                                <li class="footer-item">
-                                    <a href="../DanhMucSanPham/indexAdmin.html#BurgerComMiY" class="footer-link">Burger
-                                        - Cơm - Mì Ý</a>
-                                </li>
-                                <li class="footer-item">
-                                    <a href="../DanhMucSanPham/indexAdmin.html#ThucAnNhe" class="footer-link">Thức Ăn
-                                        Nhẹ</a>
-                                </li>
-                                <li class="footer-item">
-                                    <a href="../DanhMucSanPham/indexAdmin.html#ThucUong_TrangMieng"
-                                        class="footer-link">Thức Uống & Tráng Miệng</a>
-                                </li>
-                            </ul>
-                        </div>
-                        <div class="footer-block">
-                            <h3 class="footer-heading">ABOUT US</h3>
-                            <ul class="footer-list">
-                                <li class="footer-item">
-                                    <a href="tel:+84384475805" class="footer-link">
-                                        <i class="footer-icon fa fa-phone"></i>
-                                        <span>+84384475805 </span>
-                                    </a>
-                                </li>
-                                <li class="footer-item">
-                                    <a href="mailto:email@gmail.com" class="footer-link" target="_blank">
-                                        <i class="footer-icon fa-solid fa-envelope"></i>
-                                        <span> email@gmail.com </span>
-                                    </a>
-                                </li>
-                                <li class="footer-item">
-                                    <a href="https://www.google.com/maps/place/Tr%C6%B0%E1%BB%9Dng+%C4%90%E1%BA%A1i+h%E1%BB%8Dc+S%C3%A0i+G%C3%B2n/@10.7599224,106.6796834,17z/data=!3m1!4b1!4m6!3m5!1s0x31752f1b7c3ed289:0xa06651894598e488!8m2!3d10.7599171!4d106.6822583!16s%2Fm%2F02qvnkv?hl=vi-VN&entry=ttu"
-                                        class="footer-link" target="_blank">
-                                        <i class=" footer-icon fa-solid fa-location-dot"></i>
-                                        <span> 273 Đ.An Dương Vương </span>
-                                    </a>
-                                </li>
-                            </ul>
-                        </div>
-                        <div class="footer-block">
-                            <h3 class="footer-heading">THEO DÕI</h3>
-                            <ul class="footer-list">
-                                <li class="footer-item">
-                                    <a href="" class="footer-link">
-                                        <i class="footer-icon__fb fa-brands fa-facebook"></i> Facebook </a>
-                                </li>
-                                <li class="footer-tem">
-                                    <a href="" class="footer-link">
-                                        <i class="footer-icon__ins fa-brands fa-instagram"></i> Instagram </a>
-                                </li>
-                                <li class="footer-item">
-                                    <a href="" class="footer-link">
-                                        <i class="footer-icon__ld fa-brands fa-linkedin"></i> Linkedin </a>
-                                </li>
-                            </ul>
-                        </div>
-                        <div class="footer-block">
-                            <h3 class="footer-heading">VÀO CỬA HÀNG TRÊN ỨNG DỤNG</h3>
-                            <div class="footer__download">
-                                <a href="" class="footer__download-app-link">
-                                    <img src="../assets/img/logo/ch_play.png" alt="" class="footer__download-app-img">
-                                </a>
-                                <a href="" class="footer__download-app-link">
-                                    <img src="../assets/img/logo/app_store.png" alt="" class="footer__download-app-img">
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="footer-info">
-                    <span>COPYRIGHT 2023 </span>
-                    <i class="footer-info__icon ti-face-smile"></i>
-                    <span>nhóm 12</span>
-                </div>
-            </footer>
-            <!-- FOOTER -->
+            <div class="footer-info">
+                <span>COPYRIGHT 2023 </span>
+                <i class="footer-info__icon ti-face-smile"></i>
+                <span>nhóm 12</span>
+            </div>
+        </footer>
+        <!-- FOOTER -->
         </div>
+        <!-- Include Axios library from CDN -->
         <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+        <!-- Swal -->
         <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
         <!-- API -->
-        <script src="../ADMIN/src/controll/callApiOrder.js"></script>
-        <script src="../ADMIN/src/controll/callApiProduct.js"></script>
         <script src="../ADMIN/src/controll/callApiNotify.js"></script>
-        <!-- Js tự code -->
+        <script src="../ADMIN/src/controll/callApiProduct.js"></script>
+        <script src="../ADMIN/src/controll/callApiAccount.js"></script>
+        <!-- MyJS -->
         <script src="./js/select-navigation.js"></script>
         <script src="./js/nameLogin.js"></script>
+        <script src="./js/main.js"></script>
         <script src="../js/showNotify.js"></script>
         <script src="../js/addcart.js"></script>
-        <script src="./js/main.js"></script>
-        <script src="../ADMIN/src/validates/validate.js"></script>
-        
+      </body>
     </body>
 
 </html>
