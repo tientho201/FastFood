@@ -27,7 +27,7 @@ function RenderProduct(data) {
 
             if (filter && txtValue.toLowerCase().indexOf(filter) > -1) {
                 chuoi += `<li class="header__search-history-item">
-                    <a href="../DanhMucSanPham/indexLogin.html#${temp.id}" >${temp.name}</a>
+                    <a href="./DanhMucSanPham/indexNoLogin.html#${temp.id}">${temp.name}</a>
                 </li>`;
             }
         }

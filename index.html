@@ -99,7 +99,22 @@
                         <div class="header-search">
                             <input type="checkbox" hidden id="mobile-search-chechbox" class="header__search-checkbox">
                             <div class="header-search__input-wrap">
-                                <input type="text" class="header-search__input" placeholder="Tìm kiếm sản phẩm">
+                                <input type="text" class="header-search__input" placeholder="Tìm kiếm sản phẩm" value="">
+                                <!-- search history -->
+                                <div class="header__search-history" >
+                                    <h3 class="header__search-history-heading">Kết quả tìm kiếm</h3>
+                                    <ul class="header__search-history-list">
+                                        <li class="header__search-history-item">
+                                            <a href="">Hi</a>
+                                        </li>
+                                        <li class="header__search-history-item">
+                                            <a href="">Xin chào</a>
+                                        </li>
+                                        <li class="header__search-history-item">
+                                            <a href="">Hello</a>
+                                        </li>
+                                    </ul>
+                                </div>
                                 <button class="header-search__btn">
                                     <i class="fa-solid fa-magnifying-glass"></i>
                                 </button>
@@ -117,7 +132,6 @@
                                         class="header__cart-no-cart--img">
                                     <span class="header__cart-list-no-cart-mes">LOGIN để nhận sản phẩm</span>
                                     <ul class="header__cart-list-item">
-                                  
                                     </ul>
                                     <a href="./Account/index.html"
                                         class="header__cart-view-cart btn btn--primary ">LOGIN</a>
@@ -147,7 +161,7 @@
                                     class="navigation-nav__link navigation-nav__link-home active">Home</a>
                             </li>
                             <li class="navigation-nav__item navigation-nav__item-folder">
-                                <div  class="navigation-nav__link navigation-nav__link--no-select"> Danh Mục Sản Phẩm <i
+                                <div class="navigation-nav__link navigation-nav__link--no-select"> Danh Mục Sản Phẩm <i
                                         class="navigation-nav__item-icon-down ti-angle-down"></i>
                                 </div>
                                 <div class="navigation-nav__category">
@@ -435,10 +449,14 @@
         <script src="./src/jquery.min.js"></script>
         <!-- Thêm tệp JavaScript của Slick -->
         <script src="./src/slick.min.js"></script>
+         <!-- Include Axios library from CDN -->
+         <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+         <!-- API -->
+         <script src="./ADMIN/src/controll/callApiProduct.js"></script>
         <!-- Tự JS -->
         <script src="./js/select-navigation.js"></script>
         <script src="./js/slider.js"> </script>
-        <script src="js/main.js"></script>
+        <script src="./js/search_input_trangchu.js"></script>
     </body>
 
 </html>

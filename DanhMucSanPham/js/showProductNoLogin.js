@@ -192,6 +192,14 @@ function renderProduct(data){
             <div  class="product-buy" onclick="addCartItem(${ProductTemporary.id})"> Thêm </div>
         </div>`
         }
+        if (window.location.hash == `#${ProductTemporary.id}`) {
+            document.querySelector('.anhchitietsanpham').src = ProductTemporary.img
+            document.querySelector('.titleDetail').innerHTML = ProductTemporary.name
+            document.querySelector('.pnews').innerHTML = ProductTemporary.gia + "đ"
+            document.querySelector('.infoProduct').innerHTML = ProductTemporary.detail
+            document.querySelector('.modalProduct').classList.add('open');
+            
+        }
     }   
     showUuDai.innerHTML = uudai ; 
     showMonMoi.innerHTML = monmoi ; 

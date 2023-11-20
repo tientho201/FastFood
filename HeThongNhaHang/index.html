@@ -17,7 +17,7 @@
         <link rel="stylesheet" href="../assets/css/responsive.css">
         <link rel="stylesheet" href="../assets/font/themify-icons-font/themify-icons/themify-icons.css">
         <style>
-            #contact{
+            #contact {
                 display: block;
             }
         </style>
@@ -101,6 +101,13 @@
                             <input type="checkbox" hidden id="mobile-search-chechbox" class="header__search-checkbox">
                             <div class="header-search__input-wrap">
                                 <input type="text" class="header-search__input" placeholder="Tìm kiếm sản phẩm">
+                                <!-- search history -->
+                                <div class="header__search-history">
+                                    <h3 class="header__search-history-heading">Kết quả tìm kiếm</h3>
+                                    <ul class="header__search-history-list">
+                                        
+                                    </ul>
+                                </div>
                                 <button class="header-search__btn">
                                     <i class="fa-solid fa-magnifying-glass"></i>
                                 </button>
@@ -146,54 +153,63 @@
                                 <a href="../index.html" class="navigation-nav__link navigation-nav__link-home ">Home</a>
                             </li>
                             <li class="navigation-nav__item navigation-nav__item-folder">
-                                <a  class="navigation-nav__link navigation-nav__link--no-select"> Danh Mục Sản Phẩm <i
+                                <a class="navigation-nav__link navigation-nav__link--no-select"> Danh Mục Sản Phẩm <i
                                         class="navigation-nav__item-icon-down ti-angle-down"></i>
                                 </a>
                                 <div class="navigation-nav__category">
                                     <ul class="navigation-nav__category-list">
                                         <li class="navigation-nav__category-item">
-                                            <a href="../DanhMucSanPham/indexNoLogin.html#UuDai" class="navigation-nav__category-link">
+                                            <a href="../DanhMucSanPham/indexNoLogin.html#UuDai"
+                                                class="navigation-nav__category-link">
                                                 <i class="navigation-nav__category-icon ti-angle-right"></i>Ưu Đãi</a>
                                         </li>
                                         <li class="navigation-nav__category-item">
-                                            <a href="../DanhMucSanPham/indexNoLogin.html#MonMoi" class="navigation-nav__category-link">
+                                            <a href="../DanhMucSanPham/indexNoLogin.html#MonMoi"
+                                                class="navigation-nav__category-link">
                                                 <i class="navigation-nav__category-icon ti-angle-right"></i>Món Mới</a>
                                         </li>
                                         <li class="navigation-nav__category-item">
-                                            <a href="../DanhMucSanPham/indexNoLogin.html#Combo1Nguoi" class="navigation-nav__category-link"><i
+                                            <a href="../DanhMucSanPham/indexNoLogin.html#Combo1Nguoi"
+                                                class="navigation-nav__category-link"><i
                                                     class="navigation-nav__category-icon ti-angle-right"></i>Combo 1
                                                 Người</a>
                                         </li>
                                         <li class="navigation-nav__category-item">
-                                            <a href="../DanhMucSanPham/indexNoLogin.html#ComboNhom" class="navigation-nav__category-link"><i
+                                            <a href="../DanhMucSanPham/indexNoLogin.html#ComboNhom"
+                                                class="navigation-nav__category-link"><i
                                                     class="navigation-nav__category-icon ti-angle-right"></i>Combo
                                                 Nhóm</a>
                                         </li>
                                         <li class="navigation-nav__category-item">
-                                            <a href="../DanhMucSanPham/indexNoLogin.html#GaRanGaQuay" class="navigation-nav__category-link"><i
+                                            <a href="../DanhMucSanPham/indexNoLogin.html#GaRanGaQuay"
+                                                class="navigation-nav__category-link"><i
                                                     class="navigation-nav__category-icon ti-angle-right"></i>Gà Rán - Gà
                                                 Quay</a>
                                         </li>
                                         <li class="navigation-nav__category-item">
-                                            <a href="../DanhMucSanPham/indexNoLogin.html#BurgerComMiY" class="navigation-nav__category-link"><i
+                                            <a href="../DanhMucSanPham/indexNoLogin.html#BurgerComMiY"
+                                                class="navigation-nav__category-link"><i
                                                     class="navigation-nav__category-icon ti-angle-right"></i>Burger -
                                                 Cơm - Mì Ý</a>
                                         </li>
                                         <li class="navigation-nav__category-item">
-                                            <a href="../DanhMucSanPham/indexNoLogin.html#ThucAnNhe" class="navigation-nav__category-link"><i
+                                            <a href="../DanhMucSanPham/indexNoLogin.html#ThucAnNhe"
+                                                class="navigation-nav__category-link"><i
                                                     class="navigation-nav__category-icon ti-angle-right"></i>Thức Ăn
                                                 Nhẹ</a>
                                         </li>
                                         <li class="navigation-nav__category-item">
-                                            <a href="../DanhMucSanPham/indexNoLogin.html#ThucUong_TrangMieng" class="navigation-nav__category-link"><i
+                                            <a href="../DanhMucSanPham/indexNoLogin.html#ThucUong_TrangMieng"
+                                                class="navigation-nav__category-link"><i
                                                     class="navigation-nav__category-icon ti-angle-right"></i>Thức Uống &
                                                 Tráng Miệng</a>
                                         </li>
                                     </ul>
                                 </div>
                             </li>
-                            <li class="navigation-nav__item"> 
-                                <a href="./" class="navigation-nav__link navigation-nav__link-HTNH active">Hệ Thống Nhà Hàng</a>
+                            <li class="navigation-nav__item">
+                                <a href="./" class="navigation-nav__link navigation-nav__link-HTNH active">Hệ Thống Nhà
+                                    Hàng</a>
                             </li>
                         </ul>
                     </div>
@@ -222,22 +238,28 @@
                                     <a href="../DanhMucSanPham/indexNoLogin.html#MonMoi" class="footer-link">Món Mới</a>
                                 </li>
                                 <li class="footer-item">
-                                    <a href="../DanhMucSanPham/indexNoLogin.html#Combo1Nguoi" class="footer-link"> Combo 1 Người</a>
+                                    <a href="../DanhMucSanPham/indexNoLogin.html#Combo1Nguoi" class="footer-link"> Combo
+                                        1 Người</a>
                                 </li>
                                 <li class="footer-item">
-                                    <a href="../DanhMucSanPham/indexNoLogin.html#ComboNhom" class="footer-link">Combo Nhóm</a>
+                                    <a href="../DanhMucSanPham/indexNoLogin.html#ComboNhom" class="footer-link">Combo
+                                        Nhóm</a>
                                 </li>
                                 <li class="footer-item">
-                                    <a href="../DanhMucSanPham/indexNoLogin.html#GaRanGaQuay" class="footer-link">Gà Rán - Gà Quay</a>
+                                    <a href="../DanhMucSanPham/indexNoLogin.html#GaRanGaQuay" class="footer-link">Gà Rán
+                                        - Gà Quay</a>
                                 </li>
                                 <li class="footer-item">
-                                    <a href="../DanhMucSanPham/indexNoLogin.html#BurgerComMiY" class="footer-link">Burger - Cơm - Mì Ý</a>
+                                    <a href="../DanhMucSanPham/indexNoLogin.html#BurgerComMiY"
+                                        class="footer-link">Burger - Cơm - Mì Ý</a>
                                 </li>
                                 <li class="footer-item">
-                                    <a href="../DanhMucSanPham/indexNoLogin.html#ThucAnNhe"" class="footer-link">Thức Ăn Nhẹ</a>
+                                    <a href="../DanhMucSanPham/indexNoLogin.html#ThucAnNhe"" class=" footer-link">Thức
+                                        Ăn Nhẹ</a>
                                 </li>
                                 <li class="footer-item">
-                                    <a href="../DanhMucSanPham/indexNoLogin.html#ThucUong_TrangMieng" class="footer-link">Thức Uống & Tráng Miệng</a>
+                                    <a href="../DanhMucSanPham/indexNoLogin.html#ThucUong_TrangMieng"
+                                        class="footer-link">Thức Uống & Tráng Miệng</a>
                                 </li>
                             </ul>
                         </div>
@@ -303,8 +325,15 @@
             </footer>
             <!-- FOOTER -->
         </div>
+         <!-- Include Axios library from CDN -->
+         <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+         <!-- API -->
+         <script src="../ADMIN/src/controll/callApiProduct.js"></script>
+         <!-- My JS -->
+         <script src="../js/search_input.js"></script>
         <script src="../js/select-navigation.js"></script>
         <script src="../js/main.js"></script>
+        <script src="../js/search_input_nologin.js"></script>
     </body>
 
 </html>

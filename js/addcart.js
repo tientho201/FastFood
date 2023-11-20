@@ -55,7 +55,6 @@ getlistProduct();
 function renderCartItem(product) {
     var noCartImgElement = document.querySelector('.header__cart-no-cart--img');
     var noCartMesElement = document.querySelector('.header__cart-list-no-cart-mes');
-    var cartItemElement = document.querySelector('.header__cart-item');
     var content = "";
     product.listProduct.map((item) => {
         var itemString = `
@@ -85,13 +84,13 @@ function renderCartItem(product) {
     if (content === "") {
         noCartImgElement.style.display = "flex";
         noCartMesElement.style.display = "block";
-        cartItemElement.style.display = "none";
+
         document.querySelector('.header__cart-list-item').innerHTML = content;
     } else {
         document.querySelector('.header__cart-list-item').innerHTML = content;
         noCartImgElement.style.display = "none";
         noCartMesElement.style.display = "none";
-        cartItemElement.style.display = "flex";
+
     }
 
 }

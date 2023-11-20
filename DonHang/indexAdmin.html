@@ -121,6 +121,13 @@
                             <input type="checkbox" hidden id="mobile-search-chechbox" class="header__search-checkbox">
                             <div class="header-search__input-wrap">
                                 <input type="text" class="header-search__input" placeholder="Tìm kiếm sản phẩm">
+                                 <!-- search history -->
+                                 <div class="header__search-history">
+                                    <h3 class="header__search-history-heading">Kết quả tìm kiếm</h3>
+                                    <ul class="header__search-history-list">
+                                        
+                                    </ul>
+                                </div>
                                 <button class="header-search__btn">
                                     <i class="fa-solid fa-magnifying-glass"></i>
                                 </button>
@@ -378,11 +385,13 @@
         <!-- API -->
         <script src="../ADMIN/src/controll/callApiNotify.js"></script>
         <script src="../ADMIN/src/controll/callApiOrder.js"></script>
+        <script src="../ADMIN/src/controll/callApiProduct.js"></script>
         <!-- Tự JS -->
         <script src="./js/select-navigation.js"></script>
         <script src="./js/nameLogin.js"></script>
         <script src="./js/main.js"></script>
         <script src="../js/showNotify.js"></script>
+        <script src="../js/search_input_admin.js"></script>
     </body>
 
 </html>
