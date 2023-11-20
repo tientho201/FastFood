@@ -373,7 +373,9 @@ header {
     box-shadow: 0 1px 5px #b9b9b9bf;
     margin-right: 0;
     display: none;
-    overflow: hidden;
+    overflow: scroll;
+    overflow-x: hidden;
+    max-height: 300px;
     z-index: 3;
 }
 .header__search-history-heading{
