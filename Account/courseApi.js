@@ -47,6 +47,7 @@ Validator({
                             setTimeout(() => {
                                 window.location = '../TrangChu/indexLogin.html';
                             }, 500);
+
                         })
                         
                 }

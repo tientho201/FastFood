@@ -4,9 +4,9 @@
     --white-color : #fff ; 
     --black-color: #000 ; 
     --primery-color: rgb(238, 75, 43);
-    --top_header-color:#3F2E3E;
+    --top_header-color:#3F2E3E; /*#3f2e3E*/
     --dark-gray: #25272E;
-    --red-bright: #C70039;
+    --red-bright: #D80032; 
     --text-color_black:#000000ce;
     --text-color_white: #ffffff90;
 }
@@ -73,7 +73,7 @@ html{
 
 .active{
     color: var(--red-bright) !important;
-    border-bottom: 5px solid red;
+    border-bottom: 3px solid var(--red-bright);
 }
 .active-item{
     background-color: var(--red-bright);

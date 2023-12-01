@@ -81,7 +81,7 @@ function renderCartItem(product) {
         `
         content += itemString;
     })
-    if (content === "") {
+    if (content == "") {
         noCartImgElement.style.display = "flex";
         noCartMesElement.style.display = "block";
 
@@ -120,9 +120,11 @@ function themDetail(id, qty = 1) {
     var cartItem = { product, quantity: qty };
     if (!cart.listProduct.find((item) => item.product.id == id)) {
         cart.listProduct.push(cartItem);
+        notiAlert("center" , "success" , "Thêm thành công" , 1500)
     } else {
         var index = cart.listProduct.findIndex((item) => item.product.id == id);
         cart.listProduct[index].quantity += qty;
+        notiAlert("center" , "success" , "Thêm thành công" , 1500)
     }
     cart.tinhTotalPrice();
     cart.tinhTotalQuantity();
@@ -134,9 +136,11 @@ function addCartItem(id, qty = 1) {
     var cartItem = { product, quantity: qty };
     if (!cart.listProduct.find((item) => item.product.id == id)) {
         cart.listProduct.push(cartItem);
+        notiAlert( "center","success" , "Thêm thành công" , 1500)
     } else {
         var index = cart.listProduct.findIndex((item) => item.product.id == id);
         cart.listProduct[index].quantity += qty;
+        notiAlert( "center","success" , "Thêm thành công" , 1500)
     }
     cart.tinhTotalPrice();
     cart.tinhTotalQuantity();
@@ -149,7 +153,6 @@ function deleteItemCart(id) {
     cart.tinhTotalPrice();
     cart.tinhTotalQuantity();
     setCartLocalStoregrade(cart.listProduct);
-
     renderCartItem(cart);
 }
 
